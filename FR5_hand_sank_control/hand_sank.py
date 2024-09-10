@@ -1,5 +1,6 @@
 import pygame
 import sys
+from FR5_control import handle_joystick_input
 
 # 初始化pygame的手柄模块
 pygame.init()
@@ -16,41 +17,62 @@ joystick.init()
 
 print(f"检测到手柄: {joystick.get_name()}")
 
-# 按键映射列表
-button_map = {
-    3: "左旋转 (X)",  # 按键 3 -> X -> 左旋转
-    1: "右旋转 (B)",  # 按键 1 -> B -> 右旋转
-    4: "上升 (Y)",    # 按键 4 -> Y -> 上升
-    0: "下降 (A)",    # 按键 0 -> A -> 下降
-}
-
-# 方向键（D-Pad）映射
-direction_map = {
-    (-1, 0): "左",    # D-Pad 左
-    (1, 0): "右",     # D-Pad 右
-    (0, 1): "前",     # D-Pad 上（前）
-    (0, -1): "后"     # D-Pad 下（后）
-}
-
-# 事件循环，持续检测按键输入
 while True:
     pygame.event.pump()  # 更新事件
 
-    # 遍历每一个按键并检测其状态
+    # 按键检测
     for button_index in range(joystick.get_numbuttons()):
         if joystick.get_button(button_index):
-            if button_index in button_map:
-                print(f"按下了 {button_map[button_index]} 按键")
+            handle_joystick_input(button_index)  # 调用控制模块的函数并传递按钮索引
 
-    # 检测方向键（帽子开关/方向键）
+    # 方向键检测
     for hat_index in range(joystick.get_numhats()):
         hat_value = joystick.get_hat(hat_index)
-        if hat_value in direction_map:
-            print(f"方向键操作: {direction_map[hat_value]}")
+        if hat_value != (0, 0):  # 方向键有输入时
+            handle_joystick_input(hat_value)  # 调用控制模块的函数并传递方向键输入
+
+    pygame.time.wait(100)  # 延迟100ms避免刷屏
+
+
+#测试用例
+
+# # 按键映射列表
+# button_map = {
+#     3: "左旋转 (X)",  # 按键 3 -> X -> 左旋转
+#     1: "右旋转 (B)",  # 按键 1 -> B -> 右旋转
+#     4: "上升 (Y)",    # 按键 4 -> Y -> 上升
+#     0: "下降 (A)",    # 按键 0 -> A -> 下降
+# }
+
+# # 方向键（D-Pad）映射
+# direction_map = {
+#     (-1, 0): "左",    # D-Pad 左
+#     (1, 0): "右",     # D-Pad 右
+#     (0, 1): "前",     # D-Pad 上（前）
+#     (0, -1): "后"     # D-Pad 下（后）
+# }
+
+# # 事件循环，持续检测按键输入
+# while True:
+#     pygame.event.pump()  # 更新事件
+
+#     # 遍历每一个按键并检测其状态
+#     for button_index in range(joystick.get_numbuttons()):
+#         if joystick.get_button(button_index):
+#             if button_index in button_map:
+#                 print(f"按下了 {button_map[button_index]} 按键")
+
+#     # 检测方向键（帽子开关/方向键）
+#     for hat_index in range(joystick.get_numhats()):
+#         hat_value = joystick.get_hat(hat_index)
+#         if hat_value in direction_map:
+#             print(f"方向键操作: {direction_map[hat_value]}")
     
-    pygame.time.wait(100)  # 延迟100ms避免重复输出太快
+#     pygame.time.wait(100)  # 延迟100ms避免重复输出太快
 
 
+
+#不同的手柄先用下面的代码测一下自己的各个按钮对应的号然后去FR5里面修改
 
 # import pygame
 # import sys
