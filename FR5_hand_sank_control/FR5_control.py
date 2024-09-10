@@ -12,4 +12,4 @@ if ret ==0:
 
 else:
 
-    print("查询失败",ret)
+    print("查询失败,请检查连接",ret)
