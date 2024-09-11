@@ -31,10 +31,10 @@ while True:
         if hat_value != (0, 0):  # 方向键有输入时
             handle_joystick_input(hat_value)  # 调用控制模块的函数并传递方向键输入
 
-    pygame.time.wait(100)  # 延迟100ms避免刷屏
+    pygame.time.wait(16)  # 延迟100ms避免刷屏
 
 
-#测试用例
+# #测试用例
 
 # # 按键映射列表
 # button_map = {
