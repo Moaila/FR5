@@ -17,6 +17,7 @@ joystick.init()
 
 print(f"检测到手柄: {joystick.get_name()}")
 
+
 while True:
     pygame.event.pump()  # 更新事件
 

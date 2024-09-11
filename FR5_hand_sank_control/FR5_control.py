@@ -1,10 +1,10 @@
-from fr5_init_new import fr5robot  
+from fr5_init import fr5robot  
 
 
 robot = fr5robot()  
 
 
-move_increment = 0.01
+move_increment = 10
 
 
 def handle_joystick_input(input_value):
