@@ -21,7 +21,7 @@ joystick.init()
 
 # 定义最大线速度 (单位: mm/s) 和最大角速度 (单位: rad/s)
 max_linear_speed = 100  # 最大线速度 100 mm/s
-max_angular_speed = 0.1  # 最大角速度 0.1 rad/s
+max_angular_speed = 10
 
 # 定义时间间隔
 dt = 0.05  # 时间间隔 50ms
