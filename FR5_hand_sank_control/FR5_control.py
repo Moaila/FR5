@@ -34,7 +34,6 @@ def handle_dpad_input(dpad_value):
         robot.MoveL(y=-move_increment) 
 
 def handle_button_input(button_index):
-    j
 
     if button_index == 3:  # 左旋转
         print("Rotating left (joint 5)")
