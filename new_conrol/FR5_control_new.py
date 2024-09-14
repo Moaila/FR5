@@ -34,16 +34,33 @@ if ret != 0:
 pygame.init()
 pygame.joystick.init()
 
+if pygame.joystick.get_count() == 0:
+    print("没有检测到手柄，请连接手柄再试。")
+    exit()
+
 # 获取手柄
 joystick = pygame.joystick.Joystick(0)
 joystick.init()
 
 # 定义最大线速度 和 最大角速度 
 max_linear_speed = 100  
-max_angular_speed = 10
+max_angular_speed = 20 #可以尝试增大，目前检测20可以，50不行
+
 
 # 定义时间间隔
 dt = 0.05  # 时间间隔 50ms
+
+# 夹爪初始化
+robot.SetGripperConfig(4, 0, 0, 1)
+time.sleep(0.5)
+robot.ActGripper(1, 1)
+time.sleep(2)
+
+# 定义一个最小阈值，过滤过小的手柄输入（避免微小的手柄抖动）
+#threshold = 0.1
+#消除抖动的操作可以暂时不需要使用
+
+gripper_open = True
 
 try:
     while True:
@@ -88,11 +105,51 @@ try:
 
         # 使用伺服模式更新位姿
         pos_gain = [1.0] * 6  # 位姿增量增益
-        ret = robot.ServoCart(0, [new_x, new_y, new_z, rx, ry, new_rz], pos_gain)
+        ret = robot.ServoCart(0, [new_x, new_y, new_z, new_rx, ry, new_rz], pos_gain)
         if ret != 0:
             error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
             print(f"伺服更新失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
             break
+
+        # 夹爪控制
+        button_x = joystick.get_button(3)
+        button_y = joystick.get_button(4)
+        button_a = joystick.get_button(0)
+        button_b = joystick.get_button(1)
+
+        # 夹爪打开和关闭
+        if button_x and not gripper_open:
+            # 按下X按钮，打开夹爪
+            print("打开夹爪")
+            robot.MoveGripper(1, 100, 50, 10, 10000, 1)
+            gripper_open = True
+        elif button_y and gripper_open:
+            # 按下Y按钮，关闭夹爪
+            print("关闭夹爪")
+            robot.MoveGripper(1, 0, 50, 10, 10000, 1)
+            gripper_open = False
+
+        # 夹爪旋转控制
+        if button_a:
+            # 按下A按钮，夹爪左旋
+            print("夹爪左旋")
+            # 调用夹爪左旋的命令
+            angular_velocity_j6 = max_angular_speed  # 设定旋转速度
+            current_joint_pos = robot.GetActualJointPosDegree()[1]  # 获取当前关节位置
+            new_j6 = current_joint_pos[5] + angular_velocity_j6 * dt  # 计算新的关节角度
+            robot.ServoJ([current_joint_pos[0], current_joint_pos[1], current_joint_pos[2], 
+                         current_joint_pos[3], current_joint_pos[4], new_j6])
+            
+        elif button_b:
+            # 按下B按钮，夹爪右旋
+            print("夹爪右旋")
+            # 调用夹爪右旋的命令
+            angular_velocity_j6 = -max_angular_speed  # 设定旋转速度
+            current_joint_pos = robot.GetActualJointPosDegree()[1]  # 获取当前关节位置
+            new_j6 = current_joint_pos[5] + angular_velocity_j6 * dt  # 计算新的关节角度
+            robot.ServoJ([current_joint_pos[0], current_joint_pos[1], current_joint_pos[2], 
+                         current_joint_pos[3], current_joint_pos[4], new_j6])
+
 
         # 休眠一小段时间，模拟实时控制
         time.sleep(dt)
