@@ -1,0 +1,1237 @@
+[03/13 22:40:44.340491][debug][21289][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/13 22:40:44.340527][debug][21289][Context.cpp:48] Config file version=1.1
+[03/13 22:40:44.340540][debug][21289][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/13 22:40:44.340545][info][21289][Context.cpp:67] Context created with config: default config!
+[03/13 22:40:44.340569][info][21289][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/13 22:40:44.340583][debug][21289][DeviceManager.cpp:30] DeviceManager init ...
+[03/13 22:40:44.340588][debug][21289][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/13 22:40:44.365626][debug][21289][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/13 22:40:44.366964][debug][21289][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/13 22:40:44.366993][debug][21289][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/13 22:40:44.366999][debug][21289][UsbDeviceEnumerator.cpp:164]  - 2-5-11.0 | Orbbec Gemini 2 Depth Camera
+[03/13 22:40:44.367003][debug][21289][UsbDeviceEnumerator.cpp:164]  - 2-5-11.2 | Orbbec Gemini 2 IR Camera
+[03/13 22:40:44.367006][debug][21289][UsbDeviceEnumerator.cpp:164]  - 2-5-11.4 | Orbbec Gemini 2 RGB Camera
+[03/13 22:40:44.367009][debug][21289][UsbDeviceEnumerator.cpp:164]  - 2-5-11.6 | Orbbec Gemini Data Channel
+[03/13 22:40:44.367012][debug][21289][UsbDeviceEnumerator.cpp:164]  - 2-5-11.7 | Orbbec Gemini 2 IMU
+[03/13 22:40:44.367094][info][21289][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/13 22:40:44.367120][debug][21289][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/13 22:40:44.367125][debug][21289][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/13 22:40:44.367131][info][21289][DeviceManager.cpp:15] Current found device(s): (1)
+[03/13 22:40:44.367136][info][21289][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/13 22:40:44.367141][debug][21289][DeviceManager.cpp:55] DeviceManager construct done!
+[03/13 22:40:56.760746][debug][27318][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/13 22:40:56.760808][debug][27318][Context.cpp:48] Config file version=1.1
+[03/13 22:40:56.760825][debug][27318][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/13 22:40:56.760831][info][27318][Context.cpp:67] Context created with config: default config!
+[03/13 22:40:56.760849][info][27318][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/13 22:40:56.760855][debug][27318][DeviceManager.cpp:30] DeviceManager init ...
+[03/13 22:40:56.760858][debug][27318][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/13 22:40:56.796387][debug][27318][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/13 22:40:56.868248][debug][27318][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/13 22:40:56.868294][debug][27318][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/13 22:40:56.868300][debug][27318][UsbDeviceEnumerator.cpp:164]  - 2-5-11.0 | Orbbec Gemini 2 Depth Camera
+[03/13 22:40:56.868304][debug][27318][UsbDeviceEnumerator.cpp:164]  - 2-5-11.2 | Orbbec Gemini 2 IR Camera
+[03/13 22:40:56.868307][debug][27318][UsbDeviceEnumerator.cpp:164]  - 2-5-11.4 | Orbbec Gemini 2 RGB Camera
+[03/13 22:40:56.868311][debug][27318][UsbDeviceEnumerator.cpp:164]  - 2-5-11.6 | Orbbec Gemini Data Channel
+[03/13 22:40:56.868314][debug][27318][UsbDeviceEnumerator.cpp:164]  - 2-5-11.7 | Orbbec Gemini 2 IMU
+[03/13 22:40:56.868420][info][27318][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/13 22:40:56.868435][debug][27318][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/13 22:40:56.868453][debug][27318][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/13 22:40:56.868473][info][27318][DeviceManager.cpp:15] Current found device(s): (1)
+[03/13 22:40:56.868479][info][27318][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/13 22:40:56.868484][debug][27318][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:06:47.937421][error][27318][ObUvcDevice.cpp:188] setXu failed, error code=-4
+[03/14 00:06:47.937470][error][27318][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[03/14 00:06:55.473790][debug][29306][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:06:55.473839][debug][29306][Context.cpp:48] Config file version=1.1
+[03/14 00:06:55.473852][debug][29306][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:06:55.473857][info][29306][Context.cpp:67] Context created with config: default config!
+[03/14 00:06:55.473873][info][29306][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:06:55.473880][debug][29306][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:06:55.473883][debug][29306][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:06:55.496378][debug][29306][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:06:55.564364][debug][29306][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:06:55.564442][debug][29306][ObV4lDevice.cpp:341] Found video4linux: video5
+[03/14 00:06:55.564714][debug][29306][ObV4lDevice.cpp:341] Found video4linux: video3
+[03/14 00:06:55.564870][debug][29306][ObV4lDevice.cpp:341] Found video4linux: video1
+[03/14 00:06:55.565044][debug][29306][ObV4lDevice.cpp:341] Found video4linux: video4
+[03/14 00:06:55.565223][debug][29306][ObV4lDevice.cpp:341] Found video4linux: video2
+[03/14 00:06:55.565379][debug][29306][ObV4lDevice.cpp:341] Found video4linux: video0
+[03/14 00:06:55.565557][debug][29306][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:06:55.565564][debug][29306][UsbDeviceEnumerator.cpp:164]  - 2-5-12.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:06:55.565568][debug][29306][UsbDeviceEnumerator.cpp:164]  - 2-5-12.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:06:55.565571][debug][29306][UsbDeviceEnumerator.cpp:164]  - 2-5-12.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:06:55.565574][debug][29306][UsbDeviceEnumerator.cpp:164]  - 2-5-12.6 | Orbbec Gemini Data Channel
+[03/14 00:06:55.565578][debug][29306][UsbDeviceEnumerator.cpp:164]  - 2-5-12.7 | Orbbec Gemini 2 IMU
+[03/14 00:06:55.565686][info][29306][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:06:55.565699][debug][29306][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:06:55.565704][debug][29306][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:06:55.565710][info][29306][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:06:55.565716][info][29306][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:06:55.565721][debug][29306][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:18:44.136493][error][29306][ObUvcDevice.cpp:188] setXu failed, error code=-4
+[03/14 00:18:44.136554][error][29306][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[03/14 00:18:46.791014][debug][29801][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:18:46.791050][debug][29801][Context.cpp:48] Config file version=1.1
+[03/14 00:18:46.791075][debug][29801][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:18:46.791083][info][29801][Context.cpp:67] Context created with config: default config!
+[03/14 00:18:46.791101][info][29801][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:18:46.791108][debug][29801][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:18:46.791113][debug][29801][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:18:46.825739][debug][29801][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:18:46.896316][debug][29801][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:18:46.896380][debug][29801][ObV4lDevice.cpp:341] Found video4linux: video5
+[03/14 00:18:46.896557][debug][29801][ObV4lDevice.cpp:341] Found video4linux: video3
+[03/14 00:18:46.896695][debug][29801][ObV4lDevice.cpp:341] Found video4linux: video1
+[03/14 00:18:46.896830][debug][29801][ObV4lDevice.cpp:341] Found video4linux: video4
+[03/14 00:18:46.896971][debug][29801][ObV4lDevice.cpp:341] Found video4linux: video2
+[03/14 00:18:46.897117][debug][29801][ObV4lDevice.cpp:341] Found video4linux: video0
+[03/14 00:18:46.897276][debug][29801][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:18:46.897283][debug][29801][UsbDeviceEnumerator.cpp:164]  - 2-5-13.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:18:46.897286][debug][29801][UsbDeviceEnumerator.cpp:164]  - 2-5-13.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:18:46.897288][debug][29801][UsbDeviceEnumerator.cpp:164]  - 2-5-13.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:18:46.897291][debug][29801][UsbDeviceEnumerator.cpp:164]  - 2-5-13.6 | Orbbec Gemini Data Channel
+[03/14 00:18:46.897293][debug][29801][UsbDeviceEnumerator.cpp:164]  - 2-5-13.7 | Orbbec Gemini 2 IMU
+[03/14 00:18:46.897378][info][29801][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:18:46.897390][debug][29801][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:18:46.897394][debug][29801][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:18:46.897399][info][29801][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:18:46.897403][info][29801][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:18:46.897406][debug][29801][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:19:25.521530][debug][29917][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:19:25.521574][debug][29917][Context.cpp:48] Config file version=1.1
+[03/14 00:19:25.521594][debug][29917][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:19:25.521602][info][29917][Context.cpp:67] Context created with config: default config!
+[03/14 00:19:25.521621][info][29917][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:19:25.521629][debug][29917][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:19:25.521633][debug][29917][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:19:25.560463][debug][29917][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:19:25.562191][debug][29917][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:19:25.562227][debug][29917][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:19:25.562235][debug][29917][UsbDeviceEnumerator.cpp:164]  - 2-5-13.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:19:25.562239][debug][29917][UsbDeviceEnumerator.cpp:164]  - 2-5-13.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:19:25.562243][debug][29917][UsbDeviceEnumerator.cpp:164]  - 2-5-13.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:19:25.562246][debug][29917][UsbDeviceEnumerator.cpp:164]  - 2-5-13.6 | Orbbec Gemini Data Channel
+[03/14 00:19:25.562259][debug][29917][UsbDeviceEnumerator.cpp:164]  - 2-5-13.7 | Orbbec Gemini 2 IMU
+[03/14 00:19:25.562345][info][29917][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:19:25.562374][debug][29917][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:19:25.562380][debug][29917][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:19:25.562387][info][29917][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:19:25.562394][info][29917][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:19:25.562399][debug][29917][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:20:14.726422][error][29917][ObUvcDevice.cpp:188] setXu failed, error code=-4
+[03/14 00:20:14.726487][error][29917][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[03/14 00:20:17.027255][debug][30106][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:20:17.027288][debug][30106][Context.cpp:48] Config file version=1.1
+[03/14 00:20:17.027299][debug][30106][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:20:17.027305][info][30106][Context.cpp:67] Context created with config: default config!
+[03/14 00:20:17.027318][info][30106][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:20:17.027324][debug][30106][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:20:17.027326][debug][30106][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:20:17.056727][debug][30106][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:20:17.124324][debug][30106][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:20:17.124387][debug][30106][ObV4lDevice.cpp:341] Found video4linux: video5
+[03/14 00:20:17.124568][debug][30106][ObV4lDevice.cpp:341] Found video4linux: video3
+[03/14 00:20:17.124732][debug][30106][ObV4lDevice.cpp:341] Found video4linux: video1
+[03/14 00:20:17.124914][debug][30106][ObV4lDevice.cpp:341] Found video4linux: video4
+[03/14 00:20:17.125082][debug][30106][ObV4lDevice.cpp:341] Found video4linux: video2
+[03/14 00:20:17.125245][debug][30106][ObV4lDevice.cpp:341] Found video4linux: video0
+[03/14 00:20:17.125405][debug][30106][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:20:17.125411][debug][30106][UsbDeviceEnumerator.cpp:164]  - 2-5-14.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:20:17.125414][debug][30106][UsbDeviceEnumerator.cpp:164]  - 2-5-14.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:20:17.125417][debug][30106][UsbDeviceEnumerator.cpp:164]  - 2-5-14.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:20:17.125420][debug][30106][UsbDeviceEnumerator.cpp:164]  - 2-5-14.6 | Orbbec Gemini Data Channel
+[03/14 00:20:17.125422][debug][30106][UsbDeviceEnumerator.cpp:164]  - 2-5-14.7 | Orbbec Gemini 2 IMU
+[03/14 00:20:17.125513][info][30106][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:20:17.125524][debug][30106][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:20:17.125528][debug][30106][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:20:17.125533][info][30106][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:20:17.125537][info][30106][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:20:17.125541][debug][30106][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:24:00.565865][debug][30380][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:24:00.565920][debug][30380][Context.cpp:48] Config file version=1.1
+[03/14 00:24:00.565951][debug][30380][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:24:00.565960][info][30380][Context.cpp:67] Context created with config: default config!
+[03/14 00:24:00.565981][info][30380][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:24:00.565991][debug][30380][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:24:00.565995][debug][30380][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:24:00.600093][debug][30380][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:24:00.601632][debug][30380][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:24:00.601704][debug][30380][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:24:00.601715][debug][30380][UsbDeviceEnumerator.cpp:164]  - 2-5-14.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:24:00.601721][debug][30380][UsbDeviceEnumerator.cpp:164]  - 2-5-14.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:24:00.601725][debug][30380][UsbDeviceEnumerator.cpp:164]  - 2-5-14.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:24:00.601728][debug][30380][UsbDeviceEnumerator.cpp:164]  - 2-5-14.6 | Orbbec Gemini Data Channel
+[03/14 00:24:00.601732][debug][30380][UsbDeviceEnumerator.cpp:164]  - 2-5-14.7 | Orbbec Gemini 2 IMU
+[03/14 00:24:00.601857][info][30380][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:24:00.601873][debug][30380][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:24:00.601880][debug][30380][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:24:00.601900][info][30380][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:24:00.601921][info][30380][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:24:00.601928][debug][30380][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:24:43.708290][debug][30450][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:24:43.708326][debug][30450][Context.cpp:48] Config file version=1.1
+[03/14 00:24:43.708339][debug][30450][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:24:43.708344][info][30450][Context.cpp:67] Context created with config: default config!
+[03/14 00:24:43.708358][info][30450][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:24:43.708364][debug][30450][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:24:43.708367][debug][30450][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:24:43.732455][debug][30450][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:24:43.734208][debug][30450][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:24:43.734239][debug][30450][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:24:43.734245][debug][30450][UsbDeviceEnumerator.cpp:164]  - 2-5-14.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:24:43.734248][debug][30450][UsbDeviceEnumerator.cpp:164]  - 2-5-14.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:24:43.734251][debug][30450][UsbDeviceEnumerator.cpp:164]  - 2-5-14.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:24:43.734253][debug][30450][UsbDeviceEnumerator.cpp:164]  - 2-5-14.6 | Orbbec Gemini Data Channel
+[03/14 00:24:43.734256][debug][30450][UsbDeviceEnumerator.cpp:164]  - 2-5-14.7 | Orbbec Gemini 2 IMU
+[03/14 00:24:43.734329][info][30450][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:24:43.734342][debug][30450][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:24:43.734347][debug][30450][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:24:43.734353][info][30450][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:24:43.734367][info][30450][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:24:43.734372][debug][30450][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:25:12.451348][debug][30510][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:25:12.451385][debug][30510][Context.cpp:48] Config file version=1.1
+[03/14 00:25:12.451397][debug][30510][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:25:12.451403][info][30510][Context.cpp:67] Context created with config: default config!
+[03/14 00:25:12.451432][info][30510][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:25:12.451438][debug][30510][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:25:12.451442][debug][30510][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:25:12.499998][debug][30510][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:25:12.501602][debug][30510][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:25:12.501629][debug][30510][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:25:12.501635][debug][30510][UsbDeviceEnumerator.cpp:164]  - 2-5-14.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:25:12.501638][debug][30510][UsbDeviceEnumerator.cpp:164]  - 2-5-14.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:25:12.501640][debug][30510][UsbDeviceEnumerator.cpp:164]  - 2-5-14.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:25:12.501643][debug][30510][UsbDeviceEnumerator.cpp:164]  - 2-5-14.6 | Orbbec Gemini Data Channel
+[03/14 00:25:12.501645][debug][30510][UsbDeviceEnumerator.cpp:164]  - 2-5-14.7 | Orbbec Gemini 2 IMU
+[03/14 00:25:12.501709][info][30510][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:25:12.501734][debug][30510][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:25:12.501738][debug][30510][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:25:12.501742][info][30510][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:25:12.501747][info][30510][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:25:12.501750][debug][30510][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:30:47.400501][error][30510][ObUvcDevice.cpp:188] setXu failed, error code=-4
+[03/14 00:30:47.400541][error][30510][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[03/14 00:30:49.343124][debug][30952][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:30:49.343158][debug][30952][Context.cpp:48] Config file version=1.1
+[03/14 00:30:49.343168][debug][30952][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:30:49.343173][info][30952][Context.cpp:67] Context created with config: default config!
+[03/14 00:30:49.343185][info][30952][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:30:49.343190][debug][30952][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:30:49.343193][debug][30952][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:30:49.376016][debug][30952][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:30:49.444330][debug][30952][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:30:49.444370][debug][30952][ObV4lDevice.cpp:341] Found video4linux: video5
+[03/14 00:30:49.444547][debug][30952][ObV4lDevice.cpp:341] Found video4linux: video3
+[03/14 00:30:49.444678][debug][30952][ObV4lDevice.cpp:341] Found video4linux: video1
+[03/14 00:30:49.444806][debug][30952][ObV4lDevice.cpp:341] Found video4linux: video4
+[03/14 00:30:49.444949][debug][30952][ObV4lDevice.cpp:341] Found video4linux: video2
+[03/14 00:30:49.445081][debug][30952][ObV4lDevice.cpp:341] Found video4linux: video0
+[03/14 00:30:49.445222][debug][30952][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:30:49.445227][debug][30952][UsbDeviceEnumerator.cpp:164]  - 2-5-15.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:30:49.445229][debug][30952][UsbDeviceEnumerator.cpp:164]  - 2-5-15.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:30:49.445231][debug][30952][UsbDeviceEnumerator.cpp:164]  - 2-5-15.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:30:49.445233][debug][30952][UsbDeviceEnumerator.cpp:164]  - 2-5-15.6 | Orbbec Gemini Data Channel
+[03/14 00:30:49.445235][debug][30952][UsbDeviceEnumerator.cpp:164]  - 2-5-15.7 | Orbbec Gemini 2 IMU
+[03/14 00:30:49.445324][info][30952][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:30:49.445334][debug][30952][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:30:49.445337][debug][30952][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:30:49.445342][info][30952][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:30:49.445346][info][30952][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:30:49.445349][debug][30952][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:38:19.246646][error][30952][ObUvcDevice.cpp:188] setXu failed, error code=-4
+[03/14 00:38:19.246684][error][30952][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[03/14 00:38:21.224680][debug][31275][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:38:21.224709][debug][31275][Context.cpp:48] Config file version=1.1
+[03/14 00:38:21.224719][debug][31275][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:38:21.224724][info][31275][Context.cpp:67] Context created with config: default config!
+[03/14 00:38:21.224751][info][31275][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:38:21.224756][debug][31275][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:38:21.224759][debug][31275][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:38:21.265708][debug][31275][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:38:21.336252][debug][31275][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:38:21.336295][debug][31275][ObV4lDevice.cpp:341] Found video4linux: video5
+[03/14 00:38:21.336479][debug][31275][ObV4lDevice.cpp:341] Found video4linux: video3
+[03/14 00:38:21.336645][debug][31275][ObV4lDevice.cpp:341] Found video4linux: video1
+[03/14 00:38:21.336960][debug][31275][ObV4lDevice.cpp:341] Found video4linux: video4
+[03/14 00:38:21.337216][debug][31275][ObV4lDevice.cpp:341] Found video4linux: video2
+[03/14 00:38:21.337431][debug][31275][ObV4lDevice.cpp:341] Found video4linux: video0
+[03/14 00:38:21.337605][debug][31275][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:38:21.337610][debug][31275][UsbDeviceEnumerator.cpp:164]  - 2-5-16.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:38:21.337612][debug][31275][UsbDeviceEnumerator.cpp:164]  - 2-5-16.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:38:21.337614][debug][31275][UsbDeviceEnumerator.cpp:164]  - 2-5-16.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:38:21.337616][debug][31275][UsbDeviceEnumerator.cpp:164]  - 2-5-16.6 | Orbbec Gemini Data Channel
+[03/14 00:38:21.337618][debug][31275][UsbDeviceEnumerator.cpp:164]  - 2-5-16.7 | Orbbec Gemini 2 IMU
+[03/14 00:38:21.337719][info][31275][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:38:21.337743][debug][31275][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:38:21.337754][debug][31275][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:38:21.337758][info][31275][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:38:21.337763][info][31275][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:38:21.337766][debug][31275][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 00:39:34.058849][debug][31403][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:39:34.058878][debug][31403][Context.cpp:48] Config file version=1.1
+[03/14 00:39:34.058888][debug][31403][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 00:39:34.058893][info][31403][Context.cpp:67] Context created with config: default config!
+[03/14 00:39:34.058906][info][31403][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 00:39:34.058911][debug][31403][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 00:39:34.058913][debug][31403][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 00:39:34.088154][debug][31403][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 00:39:34.160353][debug][31403][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 00:39:34.160397][debug][31403][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 00:39:34.160402][debug][31403][UsbDeviceEnumerator.cpp:164]  - 2-5-16.0 | Orbbec Gemini 2 Depth Camera
+[03/14 00:39:34.160405][debug][31403][UsbDeviceEnumerator.cpp:164]  - 2-5-16.2 | Orbbec Gemini 2 IR Camera
+[03/14 00:39:34.160408][debug][31403][UsbDeviceEnumerator.cpp:164]  - 2-5-16.4 | Orbbec Gemini 2 RGB Camera
+[03/14 00:39:34.160410][debug][31403][UsbDeviceEnumerator.cpp:164]  - 2-5-16.6 | Orbbec Gemini Data Channel
+[03/14 00:39:34.160413][debug][31403][UsbDeviceEnumerator.cpp:164]  - 2-5-16.7 | Orbbec Gemini 2 IMU
+[03/14 00:39:34.160503][info][31403][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 00:39:34.160513][debug][31403][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 00:39:34.160518][debug][31403][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 00:39:34.160523][info][31403][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 00:39:34.160529][info][31403][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 00:39:34.160533][debug][31403][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 01:09:16.374695][debug][36481][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 01:09:16.374734][debug][36481][Context.cpp:48] Config file version=1.1
+[03/14 01:09:16.374745][debug][36481][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 01:09:16.374750][info][36481][Context.cpp:67] Context created with config: default config!
+[03/14 01:09:16.374763][info][36481][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 01:09:16.374768][debug][36481][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 01:09:16.374771][debug][36481][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 01:09:16.408069][debug][36481][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 01:09:16.480235][debug][36481][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 01:09:16.480279][debug][36481][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 01:09:16.480283][debug][36481][UsbDeviceEnumerator.cpp:164]  - 2-5-19.0 | Orbbec Gemini 2 Depth Camera
+[03/14 01:09:16.480285][debug][36481][UsbDeviceEnumerator.cpp:164]  - 2-5-19.2 | Orbbec Gemini 2 IR Camera
+[03/14 01:09:16.480295][debug][36481][UsbDeviceEnumerator.cpp:164]  - 2-5-19.4 | Orbbec Gemini 2 RGB Camera
+[03/14 01:09:16.480297][debug][36481][UsbDeviceEnumerator.cpp:164]  - 2-5-19.6 | Orbbec Gemini Data Channel
+[03/14 01:09:16.480299][debug][36481][UsbDeviceEnumerator.cpp:164]  - 2-5-19.7 | Orbbec Gemini 2 IMU
+[03/14 01:09:16.480376][info][36481][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 01:09:16.480385][debug][36481][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 01:09:16.480388][debug][36481][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 01:09:16.480392][info][36481][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 01:09:16.480395][info][36481][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 01:09:16.480398][debug][36481][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 01:09:32.669417][debug][36513][Context.cpp:29] Context creating. work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 01:09:32.669447][debug][36513][Context.cpp:48] Config file version=1.1
+[03/14 01:09:32.669457][debug][36513][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[03/14 01:09:32.669464][info][36513][Context.cpp:67] Context created with config: default config!
+[03/14 01:09:32.669477][info][36513][Context.cpp:72] Context work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[03/14 01:09:32.669481][debug][36513][DeviceManager.cpp:30] DeviceManager init ...
+[03/14 01:09:32.669484][debug][36513][LinuxPal.cpp:36] createObPal: create LinuxPal!
+[03/14 01:09:32.700511][debug][36513][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[03/14 01:09:32.702198][debug][36513][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[03/14 01:09:32.702223][debug][36513][UsbDeviceEnumerator.cpp:161] Current usb device port list:
+[03/14 01:09:32.702227][debug][36513][UsbDeviceEnumerator.cpp:164]  - 2-5-19.0 | Orbbec Gemini 2 Depth Camera
+[03/14 01:09:32.702229][debug][36513][UsbDeviceEnumerator.cpp:164]  - 2-5-19.2 | Orbbec Gemini 2 IR Camera
+[03/14 01:09:32.702231][debug][36513][UsbDeviceEnumerator.cpp:164]  - 2-5-19.4 | Orbbec Gemini 2 RGB Camera
+[03/14 01:09:32.702233][debug][36513][UsbDeviceEnumerator.cpp:164]  - 2-5-19.6 | Orbbec Gemini Data Channel
+[03/14 01:09:32.702235][debug][36513][UsbDeviceEnumerator.cpp:164]  - 2-5-19.7 | Orbbec Gemini 2 IMU
+[03/14 01:09:32.702294][info][36513][LinuxPal.cpp:110] Create PollingDeviceWatcher!
+[03/14 01:09:32.702303][debug][36513][UsbDeviceEnumerator.cpp:69] Found 1 device(s):
+[03/14 01:09:32.702306][debug][36513][UsbDeviceEnumerator.cpp:72]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB3.0
+[03/14 01:09:32.702310][info][36513][DeviceManager.cpp:15] Current found device(s): (1)
+[03/14 01:09:32.702314][info][36513][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB3.0
+[03/14 01:09:32.702317][debug][36513][DeviceManager.cpp:55] DeviceManager construct done!
+[03/14 01:18:11.011490][error][36513][ObUvcDevice.cpp:188] setXu failed, error code=-4
+[03/14 01:18:11.011541][error][36513][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[05/24 15:09:06.255859][debug][25088][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:09:06.256289][debug][25088][Context.cpp:49] Config file version=1.1
+[05/24 15:09:06.256308][debug][25088][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:09:06.256329][info][25088][Context.cpp:68] Context created with config: default config!
+[05/24 15:09:06.256366][info][25088][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:09:06.256527][debug][25088][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:09:06.256533][info][25088][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:09:06.257358][debug][25088][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:09:06.575218][debug][25088][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:09:06.575247][debug][25088][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:09:06.575252][debug][25088][UsbDeviceEnumerator.cpp:163]  - 1-12.4.4-34.0 | Orbbec Gemini 2 Depth Camera
+[05/24 15:09:06.575254][debug][25088][UsbDeviceEnumerator.cpp:163]  - 1-12.4.4-34.2 | Orbbec Gemini 2 IR Camera
+[05/24 15:09:06.575256][debug][25088][UsbDeviceEnumerator.cpp:163]  - 1-12.4.4-34.4 | Orbbec Gemini 2 RGB Camera
+[05/24 15:09:06.575258][debug][25088][UsbDeviceEnumerator.cpp:163]  - 1-12.4.4-34.6 | Orbbec Gemini Data Channel
+[05/24 15:09:06.575260][debug][25088][UsbDeviceEnumerator.cpp:163]  - 1-12.4.4-34.7 | Orbbec Gemini 2 IMU
+[05/24 15:09:06.575262][debug][25088][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-10.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:09:06.575264][debug][25088][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-10.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:09:06.575266][debug][25088][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-10.6 | Orbbec Gemini 335 Imu
+[05/24 15:09:06.575353][info][25088][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:09:06.575378][debug][25088][UsbDeviceEnumerator.cpp:68] Found 2 device(s):
+[05/24 15:09:06.575382][debug][25088][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, connection: USB2.0
+[05/24 15:09:06.575384][debug][25088][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:09:06.575390][info][25088][DeviceManager.cpp:15] Current found device(s): (2)
+[05/24 15:09:06.575394][info][25088][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 2, PID: 0x0670, SN/ID: AY3A131006E, Connection: USB2.0
+[05/24 15:09:06.575397][info][25088][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:09:06.575400][debug][25088][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:09:44.868331][debug][25963][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:09:44.868370][debug][25963][Context.cpp:49] Config file version=1.1
+[05/24 15:09:44.868386][debug][25963][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:09:44.868392][info][25963][Context.cpp:68] Context created with config: default config!
+[05/24 15:09:44.868411][info][25963][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:09:44.868424][debug][25963][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:09:44.868427][info][25963][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:09:44.869460][debug][25963][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:09:44.870518][debug][25963][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:09:44.870527][debug][25963][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:09:44.870531][debug][25963][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-11.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:09:44.870534][debug][25963][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-11.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:09:44.870537][debug][25963][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-11.6 | Orbbec Gemini 335 Imu
+[05/24 15:09:44.870585][info][25963][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:09:44.870593][debug][25963][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:09:44.870604][debug][25963][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:09:44.870609][info][25963][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:09:44.870614][info][25963][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:09:44.870619][debug][25963][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:10:44.679104][debug][26303][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:10:44.679143][debug][26303][Context.cpp:49] Config file version=1.1
+[05/24 15:10:44.679155][debug][26303][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:10:44.679161][info][26303][Context.cpp:68] Context created with config: default config!
+[05/24 15:10:44.679194][info][26303][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:10:44.679209][debug][26303][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:10:44.679226][info][26303][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:10:44.680196][debug][26303][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:10:44.859163][debug][26303][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:10:44.859184][debug][26303][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:10:44.859188][debug][26303][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:10:44.859191][debug][26303][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:10:44.859194][debug][26303][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:10:44.859257][info][26303][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:10:44.859266][debug][26303][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:10:44.859270][debug][26303][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:10:44.859276][info][26303][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:10:44.859281][info][26303][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:10:44.859285][debug][26303][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:11:53.945855][debug][27092][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:11:53.945916][debug][27092][Context.cpp:49] Config file version=1.1
+[05/24 15:11:53.945935][debug][27092][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:11:53.945943][info][27092][Context.cpp:68] Context created with config: default config!
+[05/24 15:11:53.945962][info][27092][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:11:53.945975][debug][27092][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:11:53.945979][info][27092][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:11:53.946959][debug][27092][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:11:54.115469][debug][27092][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:11:54.115503][debug][27092][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:11:54.115510][debug][27092][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:11:54.115515][debug][27092][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:11:54.115519][debug][27092][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:11:54.115631][info][27092][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:11:54.115645][debug][27092][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:11:54.115650][debug][27092][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:11:54.115655][info][27092][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:11:54.115660][info][27092][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:11:54.115664][debug][27092][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:11:54.581642][error][27092][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 15:11:54.581994][error][27092][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 15:12:21.173246][debug][27200][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:12:21.173299][debug][27200][Context.cpp:49] Config file version=1.1
+[05/24 15:12:21.173335][debug][27200][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:12:21.173344][info][27200][Context.cpp:68] Context created with config: default config!
+[05/24 15:12:21.173394][info][27200][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:12:21.173410][debug][27200][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:12:21.173415][info][27200][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:12:21.174842][debug][27200][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:12:21.339430][debug][27200][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:12:21.339471][debug][27200][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:12:21.339480][debug][27200][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:12:21.339485][debug][27200][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:12:21.339490][debug][27200][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:12:21.339567][info][27200][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:12:21.339580][debug][27200][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:12:21.339597][debug][27200][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:12:21.339601][info][27200][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:12:21.339620][info][27200][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:12:21.339624][debug][27200][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:12:21.808515][error][27200][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 15:12:21.808780][error][27200][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 15:12:44.189437][debug][27352][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:12:44.189472][debug][27352][Context.cpp:49] Config file version=1.1
+[05/24 15:12:44.189484][debug][27352][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:12:44.189490][info][27352][Context.cpp:68] Context created with config: default config!
+[05/24 15:12:44.189504][info][27352][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:12:44.189524][debug][27352][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:12:44.189528][info][27352][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:12:44.190371][debug][27352][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:12:44.359302][debug][27352][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:12:44.359326][debug][27352][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:12:44.359331][debug][27352][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:12:44.359333][debug][27352][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:12:44.359336][debug][27352][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:12:44.359411][info][27352][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:12:44.359442][debug][27352][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:12:44.359446][debug][27352][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:12:44.359465][info][27352][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:12:44.359469][info][27352][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:12:44.359473][debug][27352][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:12:44.864658][error][27352][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 15:13:11.642960][debug][27510][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:13:11.643021][debug][27510][Context.cpp:49] Config file version=1.1
+[05/24 15:13:11.643042][debug][27510][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:13:11.643052][info][27510][Context.cpp:68] Context created with config: default config!
+[05/24 15:13:11.643074][info][27510][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:13:11.643089][debug][27510][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:13:11.643094][info][27510][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:13:11.643977][debug][27510][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:13:11.819453][debug][27510][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:13:11.819482][debug][27510][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:13:11.819488][debug][27510][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:13:11.819491][debug][27510][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:13:11.819494][debug][27510][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:13:11.819573][info][27510][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:13:11.819585][debug][27510][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:13:11.819589][debug][27510][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:13:11.819594][info][27510][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:13:11.819599][info][27510][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:13:11.819602][debug][27510][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:14:05.275368][debug][28386][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:14:05.275420][debug][28386][Context.cpp:49] Config file version=1.1
+[05/24 15:14:05.275438][debug][28386][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:14:05.275460][info][28386][Context.cpp:68] Context created with config: default config!
+[05/24 15:14:05.275498][info][28386][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:14:05.275516][debug][28386][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:14:05.275522][info][28386][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:14:05.276842][debug][28386][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:14:05.443233][debug][28386][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:14:05.443267][debug][28386][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:14:05.443274][debug][28386][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:14:05.443277][debug][28386][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:14:05.443281][debug][28386][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:14:05.443371][info][28386][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:14:05.443384][debug][28386][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:14:05.443390][debug][28386][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:14:05.443395][info][28386][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:14:05.443402][info][28386][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:14:05.443407][debug][28386][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:14:45.429995][debug][28484][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:14:45.430035][debug][28484][Context.cpp:49] Config file version=1.1
+[05/24 15:14:45.430069][debug][28484][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:14:45.430076][info][28484][Context.cpp:68] Context created with config: default config!
+[05/24 15:14:45.430095][info][28484][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:14:45.430133][debug][28484][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:14:45.430139][info][28484][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:14:45.431032][debug][28484][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:14:45.599318][debug][28484][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:14:45.599343][debug][28484][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:14:45.599350][debug][28484][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:14:45.599354][debug][28484][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:14:45.599357][debug][28484][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:14:45.599434][info][28484][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:14:45.599461][debug][28484][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:14:45.599466][debug][28484][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:14:45.599472][info][28484][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:14:45.599478][info][28484][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:14:45.599483][debug][28484][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:18:29.694838][debug][29480][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:18:29.694889][debug][29480][Context.cpp:49] Config file version=1.1
+[05/24 15:18:29.694910][debug][29480][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:18:29.694920][info][29480][Context.cpp:68] Context created with config: default config!
+[05/24 15:18:29.694958][info][29480][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:18:29.694973][debug][29480][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:18:29.694978][info][29480][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:18:29.696039][debug][29480][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:18:29.867561][debug][29480][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:18:29.867584][debug][29480][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:18:29.867589][debug][29480][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:18:29.867591][debug][29480][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:18:29.867594][debug][29480][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:18:29.867683][info][29480][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:18:29.867702][debug][29480][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:18:29.867708][debug][29480][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:18:29.867726][info][29480][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:18:29.867732][info][29480][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:18:29.867737][debug][29480][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:19:38.712062][debug][29589][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:19:38.712123][debug][29589][Context.cpp:49] Config file version=1.1
+[05/24 15:19:38.712143][debug][29589][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:19:38.712152][info][29589][Context.cpp:68] Context created with config: default config!
+[05/24 15:19:38.712172][info][29589][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:19:38.712187][debug][29589][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:19:38.712192][info][29589][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:19:38.713223][debug][29589][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:19:38.879738][debug][29589][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:19:38.879774][debug][29589][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:19:38.879779][debug][29589][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:19:38.879782][debug][29589][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:19:38.879785][debug][29589][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:19:38.879860][info][29589][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:19:38.879875][debug][29589][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:19:38.879884][debug][29589][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:19:38.879889][info][29589][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:19:38.879894][info][29589][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:19:38.879898][debug][29589][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 15:22:00.365158][debug][29831][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 15:22:00.365210][debug][29831][Context.cpp:49] Config file version=1.1
+[05/24 15:22:00.365229][debug][29831][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 15:22:00.365239][info][29831][Context.cpp:68] Context created with config: default config!
+[05/24 15:22:00.365259][info][29831][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 15:22:00.365274][debug][29831][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 15:22:00.365278][info][29831][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 15:22:00.366452][debug][29831][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 15:22:00.539470][debug][29831][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 15:22:00.539497][debug][29831][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 15:22:00.539503][debug][29831][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.0 | Orbbec Gemini 335 Depth Camera
+[05/24 15:22:00.539507][debug][29831][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.4 | Orbbec Gemini 335 RGB Camera
+[05/24 15:22:00.539510][debug][29831][UsbDeviceEnumerator.cpp:163]  - 2-4.4.1-12.6 | Orbbec Gemini 335 Imu
+[05/24 15:22:00.539578][info][29831][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 15:22:00.539589][debug][29831][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 15:22:00.539594][debug][29831][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 15:22:00.539600][info][29831][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 15:22:00.539607][info][29831][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 15:22:00.539612][debug][29831][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:33:38.200922][debug][60377][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:33:38.200954][debug][60377][Context.cpp:49] Config file version=1.1
+[05/24 23:33:38.200966][debug][60377][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:33:38.200970][info][60377][Context.cpp:68] Context created with config: default config!
+[05/24 23:33:38.200985][info][60377][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:33:38.200994][debug][60377][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:33:38.200996][info][60377][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:33:38.201828][debug][60377][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:33:38.271347][debug][60377][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:33:38.271367][debug][60377][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:33:38.271372][debug][60377][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:33:38.271375][debug][60377][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:33:38.271378][debug][60377][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:33:38.271454][info][60377][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:33:38.271465][debug][60377][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:33:38.271470][debug][60377][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:33:38.271475][info][60377][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:33:38.271480][info][60377][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:33:38.271494][debug][60377][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:35:31.220531][debug][60604][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:35:31.220564][debug][60604][Context.cpp:49] Config file version=1.1
+[05/24 23:35:31.220576][debug][60604][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:35:31.220581][info][60604][Context.cpp:68] Context created with config: default config!
+[05/24 23:35:31.220595][info][60604][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:35:31.220604][debug][60604][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:35:31.220607][info][60604][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:35:31.221561][debug][60604][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:35:31.295271][debug][60604][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:35:31.295295][debug][60604][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:35:31.295300][debug][60604][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:35:31.295303][debug][60604][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:35:31.295305][debug][60604][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:35:31.295360][info][60604][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:35:31.295369][debug][60604][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:35:31.295373][debug][60604][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:35:31.295377][info][60604][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:35:31.295381][info][60604][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:35:31.295385][debug][60604][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:36:36.770414][debug][60704][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:36:36.770450][debug][60704][Context.cpp:49] Config file version=1.1
+[05/24 23:36:36.770462][debug][60704][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:36:36.770467][info][60704][Context.cpp:68] Context created with config: default config!
+[05/24 23:36:36.770481][info][60704][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:36:36.770490][debug][60704][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:36:36.770492][info][60704][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:36:36.771300][debug][60704][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:36:36.839154][debug][60704][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:36:36.839175][debug][60704][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:36:36.839180][debug][60704][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:36:36.839183][debug][60704][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:36:36.839186][debug][60704][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:36:36.839275][info][60704][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:36:36.839298][debug][60704][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:36:36.839317][debug][60704][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:36:36.839330][info][60704][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:36:36.839336][info][60704][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:36:36.839341][debug][60704][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:37:00.159383][error][60704][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:37:00.159781][error][60704][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:39:13.153235][debug][60924][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:39:13.153274][debug][60924][Context.cpp:49] Config file version=1.1
+[05/24 23:39:13.153287][debug][60924][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:39:13.153294][info][60924][Context.cpp:68] Context created with config: default config!
+[05/24 23:39:13.153310][info][60924][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:39:13.153321][debug][60924][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:39:13.153325][info][60924][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:39:13.154223][debug][60924][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:39:13.155347][debug][60924][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:39:13.155356][debug][60924][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:39:13.155360][debug][60924][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:39:13.155363][debug][60924][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:39:13.155366][debug][60924][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:39:13.155414][info][60924][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:39:13.155425][debug][60924][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:39:13.155429][debug][60924][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:39:13.155434][info][60924][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:39:13.155439][info][60924][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:39:13.155443][debug][60924][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:39:30.986611][debug][61035][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:39:30.986643][debug][61035][Context.cpp:49] Config file version=1.1
+[05/24 23:39:30.986655][debug][61035][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:39:30.986659][info][61035][Context.cpp:68] Context created with config: default config!
+[05/24 23:39:30.986675][info][61035][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:39:30.986688][debug][61035][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:39:30.986690][info][61035][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:39:30.987433][debug][61035][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:39:31.055622][debug][61035][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:39:31.055646][debug][61035][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:39:31.055650][debug][61035][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:39:31.055653][debug][61035][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:39:31.055664][debug][61035][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:39:31.055740][info][61035][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:39:31.055774][debug][61035][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:39:31.055779][debug][61035][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:39:31.055784][info][61035][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:39:31.055789][info][61035][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:39:31.055794][debug][61035][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:39:31.523890][error][61035][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:39:31.524142][error][61035][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:39:54.650554][debug][61179][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:39:54.650642][debug][61179][Context.cpp:49] Config file version=1.1
+[05/24 23:39:54.650659][debug][61179][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:39:54.650668][info][61179][Context.cpp:68] Context created with config: default config!
+[05/24 23:39:54.650691][info][61179][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:39:54.650706][debug][61179][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:39:54.650708][info][61179][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:39:54.651729][debug][61179][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:39:54.719532][debug][61179][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:39:54.719552][debug][61179][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:39:54.719556][debug][61179][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:39:54.719558][debug][61179][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:39:54.719560][debug][61179][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:39:54.719634][info][61179][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:39:54.719643][debug][61179][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:39:54.719646][debug][61179][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:39:54.719651][info][61179][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:39:54.719655][info][61179][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:39:54.719658][debug][61179][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:39:55.188392][error][61179][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:39:55.188597][error][61179][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:41:22.286431][debug][61840][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:41:22.286468][debug][61840][Context.cpp:49] Config file version=1.1
+[05/24 23:41:22.286481][debug][61840][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:41:22.286486][info][61840][Context.cpp:68] Context created with config: default config!
+[05/24 23:41:22.286504][info][61840][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:41:22.286527][debug][61840][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:41:22.286531][info][61840][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:41:22.287269][debug][61840][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:41:22.355257][debug][61840][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:41:22.355282][debug][61840][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:41:22.355287][debug][61840][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:41:22.355290][debug][61840][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:41:22.355293][debug][61840][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:41:22.355372][info][61840][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:41:22.355397][debug][61840][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:41:22.355401][debug][61840][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:41:22.355406][info][61840][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:41:22.355410][info][61840][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:41:22.355414][debug][61840][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:41:22.823615][error][61840][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:41:22.823909][error][61840][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:41:51.057455][debug][62084][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:41:51.057504][debug][62084][Context.cpp:49] Config file version=1.1
+[05/24 23:41:51.057517][debug][62084][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:41:51.057523][info][62084][Context.cpp:68] Context created with config: default config!
+[05/24 23:41:51.057539][info][62084][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:41:51.057549][debug][62084][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:41:51.057552][info][62084][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:41:51.058405][debug][62084][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:41:51.127582][debug][62084][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:41:51.127606][debug][62084][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:41:51.127611][debug][62084][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:41:51.127614][debug][62084][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:41:51.127617][debug][62084][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:41:51.127693][info][62084][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:41:51.127704][debug][62084][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:41:51.127708][debug][62084][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:41:51.127713][info][62084][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:41:51.127718][info][62084][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:41:51.127721][debug][62084][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:41:51.594576][error][62084][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:41:51.594875][error][62084][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:42:13.314382][debug][62222][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:42:13.314446][debug][62222][Context.cpp:49] Config file version=1.1
+[05/24 23:42:13.314470][debug][62222][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:42:13.314479][info][62222][Context.cpp:68] Context created with config: default config!
+[05/24 23:42:13.314500][info][62222][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:42:13.314513][debug][62222][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:42:13.314518][info][62222][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:42:13.315629][debug][62222][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:42:13.387393][debug][62222][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:42:13.387419][debug][62222][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:42:13.387429][debug][62222][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:42:13.387433][debug][62222][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:42:13.387437][debug][62222][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:42:13.387530][info][62222][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:42:13.387544][debug][62222][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:42:13.387549][debug][62222][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:42:13.387556][info][62222][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:42:13.387562][info][62222][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:42:13.387567][debug][62222][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:42:13.928415][error][62222][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:42:13.928784][error][62222][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:57:53.908675][debug][63385][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/24 23:57:53.908762][debug][63385][Context.cpp:49] Config file version=1.1
+[05/24 23:57:53.908798][debug][63385][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/24 23:57:53.908809][info][63385][Context.cpp:68] Context created with config: default config!
+[05/24 23:57:53.908834][info][63385][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/24 23:57:53.908848][debug][63385][DeviceManager.cpp:30] DeviceManager init ...
+[05/24 23:57:53.908852][info][63385][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/24 23:57:53.910047][debug][63385][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/24 23:57:53.983232][debug][63385][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/24 23:57:53.983257][debug][63385][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/24 23:57:53.983262][debug][63385][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/24 23:57:53.983264][debug][63385][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/24 23:57:53.983267][debug][63385][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/24 23:57:53.983334][info][63385][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/24 23:57:53.983353][debug][63385][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/24 23:57:53.983357][debug][63385][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/24 23:57:53.983362][info][63385][DeviceManager.cpp:15] Current found device(s): (1)
+[05/24 23:57:53.983367][info][63385][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/24 23:57:53.983370][debug][63385][DeviceManager.cpp:52] DeviceManager construct done!
+[05/24 23:57:54.452124][error][63385][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/24 23:57:54.452410][error][63385][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:00:19.695390][debug][63866][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:00:19.695452][debug][63866][Context.cpp:49] Config file version=1.1
+[05/25 00:00:19.695469][debug][63866][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:00:19.695478][info][63866][Context.cpp:68] Context created with config: default config!
+[05/25 00:00:19.695500][info][63866][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:00:19.695515][debug][63866][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:00:19.695519][info][63866][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:00:19.696681][debug][63866][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:00:19.763417][debug][63866][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:00:19.763457][debug][63866][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:00:19.763462][debug][63866][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:00:19.763465][debug][63866][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:00:19.763467][debug][63866][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:00:19.763539][info][63866][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:00:19.763555][debug][63866][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:00:19.763561][debug][63866][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:00:19.763566][info][63866][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:00:19.763571][info][63866][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:00:19.763574][debug][63866][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:00:20.232127][error][63866][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:00:20.232415][error][63866][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:00:56.757219][debug][64026][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:00:56.757260][debug][64026][Context.cpp:49] Config file version=1.1
+[05/25 00:00:56.757273][debug][64026][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:00:56.757278][info][64026][Context.cpp:68] Context created with config: default config!
+[05/25 00:00:56.757293][info][64026][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:00:56.757303][debug][64026][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:00:56.757315][info][64026][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:00:56.758407][debug][64026][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:00:56.827551][debug][64026][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:00:56.827574][debug][64026][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:00:56.827579][debug][64026][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:00:56.827582][debug][64026][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:00:56.827585][debug][64026][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:00:56.827668][info][64026][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:00:56.827679][debug][64026][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:00:56.827683][debug][64026][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:00:56.827688][info][64026][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:00:56.827705][info][64026][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:00:56.827709][debug][64026][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:00:57.295217][error][64026][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:00:57.295486][error][64026][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:02:03.419715][debug][64240][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:02:03.419754][debug][64240][Context.cpp:49] Config file version=1.1
+[05/25 00:02:03.419766][debug][64240][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:02:03.419772][info][64240][Context.cpp:68] Context created with config: default config!
+[05/25 00:02:03.419787][info][64240][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:02:03.419797][debug][64240][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:02:03.419800][info][64240][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:02:03.420667][debug][64240][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:02:03.491507][debug][64240][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:02:03.491530][debug][64240][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:02:03.491536][debug][64240][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:02:03.491539][debug][64240][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:02:03.491543][debug][64240][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:02:03.491635][info][64240][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:02:03.491647][debug][64240][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:02:03.491652][debug][64240][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:02:03.491658][info][64240][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:02:03.491677][info][64240][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:02:03.491696][debug][64240][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:02:03.959260][error][64240][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:02:03.959540][error][64240][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:02:21.620522][debug][64372][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:02:21.620605][debug][64372][Context.cpp:49] Config file version=1.1
+[05/25 00:02:21.620631][debug][64372][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:02:21.620637][info][64372][Context.cpp:68] Context created with config: default config!
+[05/25 00:02:21.620667][info][64372][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:02:21.620691][debug][64372][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:02:21.620694][info][64372][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:02:21.621616][debug][64372][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:02:21.691294][debug][64372][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:02:21.691333][debug][64372][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:02:21.691338][debug][64372][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:02:21.691341][debug][64372][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:02:21.691343][debug][64372][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:02:21.691425][info][64372][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:02:21.691437][debug][64372][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:02:21.691441][debug][64372][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:02:21.691459][info][64372][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:02:21.691463][info][64372][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:02:21.691467][debug][64372][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:02:22.159872][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:02:22.160083][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:06:22.043192][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:06:22.043405][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:06:43.607416][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:06:43.607762][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:06:45.896071][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:06:45.896321][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:07:50.041792][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:07:50.042042][error][64372][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:12.728126][debug][64932][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:08:12.728175][debug][64932][Context.cpp:49] Config file version=1.1
+[05/25 00:08:12.728192][debug][64932][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:08:12.728201][info][64932][Context.cpp:68] Context created with config: default config!
+[05/25 00:08:12.728221][info][64932][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:08:12.728246][debug][64932][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:08:12.728268][info][64932][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:08:12.729155][debug][64932][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:08:12.799566][debug][64932][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:08:12.799593][debug][64932][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:08:12.799600][debug][64932][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:08:12.799604][debug][64932][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:08:12.799608][debug][64932][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:08:12.799695][info][64932][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:08:12.799707][debug][64932][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:08:12.799713][debug][64932][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:08:12.799719][info][64932][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:08:12.799725][info][64932][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:08:12.799730][debug][64932][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:08:13.278209][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:13.278448][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:14.747035][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:14.747305][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:37.803974][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:37.804278][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:40.479645][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:08:40.479957][error][64932][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:09:04.143224][debug][65087][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:09:04.143269][debug][65087][Context.cpp:49] Config file version=1.1
+[05/25 00:09:04.143281][debug][65087][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:09:04.143287][info][65087][Context.cpp:68] Context created with config: default config!
+[05/25 00:09:04.143303][info][65087][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:09:04.143328][debug][65087][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:09:04.143331][info][65087][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:09:04.144228][debug][65087][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:09:04.212019][debug][65087][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:09:04.212043][debug][65087][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:09:04.212048][debug][65087][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:09:04.212051][debug][65087][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:09:04.212062][debug][65087][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:09:04.212135][info][65087][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:09:04.212161][debug][65087][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:09:04.212166][debug][65087][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:09:04.212171][info][65087][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:09:04.212176][info][65087][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:09:04.212179][debug][65087][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:09:04.691823][error][65087][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:09:04.692129][error][65087][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:09:26.491363][error][65087][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:09:26.491654][error][65087][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:11:16.760782][debug][65331][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:11:16.760822][debug][65331][Context.cpp:49] Config file version=1.1
+[05/25 00:11:16.760834][debug][65331][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:11:16.760839][info][65331][Context.cpp:68] Context created with config: default config!
+[05/25 00:11:16.760854][info][65331][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:11:16.760864][debug][65331][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:11:16.760867][info][65331][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:11:16.761792][debug][65331][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:11:16.835075][debug][65331][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:11:16.835099][debug][65331][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:11:16.835104][debug][65331][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:11:16.835107][debug][65331][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:11:16.835109][debug][65331][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:11:16.835192][info][65331][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:11:16.835203][debug][65331][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:11:16.835207][debug][65331][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:11:16.835212][info][65331][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:11:16.835216][info][65331][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:11:16.835220][debug][65331][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:11:31.295655][debug][65447][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:11:31.295720][debug][65447][Context.cpp:49] Config file version=1.1
+[05/25 00:11:31.295740][debug][65447][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:11:31.295748][info][65447][Context.cpp:68] Context created with config: default config!
+[05/25 00:11:31.295769][info][65447][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:11:31.295794][debug][65447][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:11:31.295798][info][65447][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:11:31.296762][debug][65447][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:11:31.363292][debug][65447][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:11:31.363316][debug][65447][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:11:31.363321][debug][65447][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:11:31.363324][debug][65447][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:11:31.363326][debug][65447][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:11:31.363399][info][65447][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:11:31.363424][debug][65447][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:11:31.363428][debug][65447][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:11:31.363433][info][65447][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:11:31.363451][info][65447][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:11:31.363455][debug][65447][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:11:31.954326][error][65447][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:11:31.954569][error][65447][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:12:24.723797][debug][65623][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码
+[05/25 00:12:24.723842][debug][65623][Context.cpp:49] Config file version=1.1
+[05/25 00:12:24.723874][debug][65623][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/25 00:12:24.723883][info][65623][Context.cpp:68] Context created with config: default config!
+[05/25 00:12:24.723917][info][65623][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini2-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码, SDK version=v1.10.5-20240511-7dc8be9
+[05/25 00:12:24.723945][debug][65623][DeviceManager.cpp:30] DeviceManager init ...
+[05/25 00:12:24.723950][info][65623][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/25 00:12:24.725105][debug][65623][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/25 00:12:24.794943][debug][65623][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/25 00:12:24.794968][debug][65623][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/25 00:12:24.794975][debug][65623][UsbDeviceEnumerator.cpp:163]  - 2-5-15.0 | Orbbec Gemini 335 Depth Camera
+[05/25 00:12:24.794979][debug][65623][UsbDeviceEnumerator.cpp:163]  - 2-5-15.4 | Orbbec Gemini 335 RGB Camera
+[05/25 00:12:24.794983][debug][65623][UsbDeviceEnumerator.cpp:163]  - 2-5-15.6 | Orbbec Gemini 335 Imu
+[05/25 00:12:24.795065][info][65623][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/25 00:12:24.795077][debug][65623][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/25 00:12:24.795083][debug][65623][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/25 00:12:24.795089][info][65623][DeviceManager.cpp:15] Current found device(s): (1)
+[05/25 00:12:24.795095][info][65623][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/25 00:12:24.795101][debug][65623][DeviceManager.cpp:52] DeviceManager construct done!
+[05/25 00:12:25.389461][error][65623][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/25 00:12:25.389793][error][65623][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:23:24.701692][debug][26093][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[05/27 17:23:24.701956][debug][26093][Context.cpp:49] Config file version=1.1
+[05/27 17:23:24.702243][debug][26093][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/27 17:23:24.702256][info][26093][Context.cpp:68] Context created with config: default config!
+[05/27 17:23:24.702274][info][26093][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[05/27 17:23:24.702283][debug][26093][DeviceManager.cpp:30] DeviceManager init ...
+[05/27 17:23:24.702286][info][26093][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/27 17:23:24.703318][debug][26093][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/27 17:23:24.873874][debug][26093][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/27 17:23:24.873894][debug][26093][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/27 17:23:24.873898][debug][26093][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-8.0 | Orbbec Gemini 335 Depth Camera
+[05/27 17:23:24.873900][debug][26093][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-8.4 | Orbbec Gemini 335 RGB Camera
+[05/27 17:23:24.873902][debug][26093][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-8.6 | Orbbec Gemini 335 Imu
+[05/27 17:23:24.874016][info][26093][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/27 17:23:24.874026][debug][26093][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/27 17:23:24.874030][debug][26093][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/27 17:23:24.874035][info][26093][DeviceManager.cpp:15] Current found device(s): (1)
+[05/27 17:23:24.874039][info][26093][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/27 17:23:24.874042][debug][26093][DeviceManager.cpp:52] DeviceManager construct done!
+[05/27 17:23:41.024618][error][26093][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:24:23.491850][debug][26313][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[05/27 17:24:23.491884][debug][26313][Context.cpp:49] Config file version=1.1
+[05/27 17:24:23.491895][debug][26313][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/27 17:24:23.491900][info][26313][Context.cpp:68] Context created with config: default config!
+[05/27 17:24:23.491914][info][26313][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[05/27 17:24:23.491923][debug][26313][DeviceManager.cpp:30] DeviceManager init ...
+[05/27 17:24:23.491926][info][26313][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/27 17:24:23.492675][debug][26313][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/27 17:24:23.666160][debug][26313][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/27 17:24:23.666185][debug][26313][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/27 17:24:23.666189][debug][26313][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-8.0 | Orbbec Gemini 335 Depth Camera
+[05/27 17:24:23.666191][debug][26313][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-8.4 | Orbbec Gemini 335 RGB Camera
+[05/27 17:24:23.666193][debug][26313][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-8.6 | Orbbec Gemini 335 Imu
+[05/27 17:24:23.666260][info][26313][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/27 17:24:23.666294][debug][26313][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/27 17:24:23.666298][debug][26313][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/27 17:24:23.666302][info][26313][DeviceManager.cpp:15] Current found device(s): (1)
+[05/27 17:24:23.666307][info][26313][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/27 17:24:23.666310][debug][26313][DeviceManager.cpp:52] DeviceManager construct done!
+[05/27 17:25:13.035506][error][26313][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:25:13.035864][error][26313][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:26:04.106582][error][26529][ObLibuvcDevicePort.cpp:257] setXu failed, error code=-4
+[05/27 17:26:04.106610][error][26529][HostProtocol.cpp:420] Set property value failed! propertyId:77, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[05/27 17:26:04.107273][error][26529][VideoSensor.cpp:757] setPropertyValue to stop stream failed! @OB_SENSOR_COLOR
+[05/27 17:26:04.108944][error][26529][ObLibuvcDevicePort.cpp:257] setXu failed, error code=-4
+[05/27 17:26:04.108962][error][26529][HostProtocol.cpp:420] Set property value failed! propertyId:38, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[05/27 17:26:04.108996][error][26529][VideoSensor.cpp:757] setPropertyValue to stop stream failed! @OB_SENSOR_DEPTH
+[05/27 17:26:11.505082][error][26313][ObLibuvcDevicePort.cpp:257] setXu failed, error code=-4
+[05/27 17:26:11.505112][error][26313][HostProtocol.cpp:420] Set property value failed! propertyId:42, rc:{statusCode: 2, respErrorCode: 65535, msg: send control transfer failed!}
+[05/27 17:26:15.788736][debug][26637][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[05/27 17:26:15.788769][debug][26637][Context.cpp:49] Config file version=1.1
+[05/27 17:26:15.788781][debug][26637][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/27 17:26:15.788786][info][26637][Context.cpp:68] Context created with config: default config!
+[05/27 17:26:15.788806][info][26637][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[05/27 17:26:15.788821][debug][26637][DeviceManager.cpp:30] DeviceManager init ...
+[05/27 17:26:15.788864][info][26637][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/27 17:26:15.789947][debug][26637][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/27 17:26:15.790875][debug][26637][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/27 17:26:15.790884][debug][26637][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/27 17:26:15.790887][debug][26637][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.0 | Orbbec Gemini 335 Depth Camera
+[05/27 17:26:15.790889][debug][26637][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.4 | Orbbec Gemini 335 RGB Camera
+[05/27 17:26:15.790891][debug][26637][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.6 | Orbbec Gemini 335 Imu
+[05/27 17:26:15.790935][info][26637][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/27 17:26:15.790957][debug][26637][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/27 17:26:15.790960][debug][26637][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/27 17:26:15.790965][info][26637][DeviceManager.cpp:15] Current found device(s): (1)
+[05/27 17:26:15.790968][info][26637][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/27 17:26:15.790972][debug][26637][DeviceManager.cpp:52] DeviceManager construct done!
+[05/27 17:26:16.328528][error][26637][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:26:16.328790][error][26637][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:26:56.367156][debug][26839][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[05/27 17:26:56.367248][debug][26839][Context.cpp:49] Config file version=1.1
+[05/27 17:26:56.367279][debug][26839][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/27 17:26:56.367301][info][26839][Context.cpp:68] Context created with config: default config!
+[05/27 17:26:56.367321][info][26839][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[05/27 17:26:56.367335][debug][26839][DeviceManager.cpp:30] DeviceManager init ...
+[05/27 17:26:56.367339][info][26839][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/27 17:26:56.368358][debug][26839][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/27 17:26:56.538215][debug][26839][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/27 17:26:56.538237][debug][26839][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/27 17:26:56.538241][debug][26839][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.0 | Orbbec Gemini 335 Depth Camera
+[05/27 17:26:56.538243][debug][26839][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.4 | Orbbec Gemini 335 RGB Camera
+[05/27 17:26:56.538245][debug][26839][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.6 | Orbbec Gemini 335 Imu
+[05/27 17:26:56.538317][info][26839][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/27 17:26:56.538326][debug][26839][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/27 17:26:56.538330][debug][26839][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/27 17:26:56.538334][info][26839][DeviceManager.cpp:15] Current found device(s): (1)
+[05/27 17:26:56.538338][info][26839][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/27 17:26:56.538341][debug][26839][DeviceManager.cpp:52] DeviceManager construct done!
+[05/27 17:26:57.005900][error][26839][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:26:57.006185][error][26839][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[05/27 17:29:30.292803][debug][27121][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[05/27 17:29:30.292876][debug][27121][Context.cpp:49] Config file version=1.1
+[05/27 17:29:30.292895][debug][27121][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[05/27 17:29:30.292916][info][27121][Context.cpp:68] Context created with config: default config!
+[05/27 17:29:30.292961][info][27121][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[05/27 17:29:30.292974][debug][27121][DeviceManager.cpp:30] DeviceManager init ...
+[05/27 17:29:30.292977][info][27121][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[05/27 17:29:30.293940][debug][27121][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[05/27 17:29:30.470090][debug][27121][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[05/27 17:29:30.470122][debug][27121][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[05/27 17:29:30.470126][debug][27121][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.0 | Orbbec Gemini 335 Depth Camera
+[05/27 17:29:30.470128][debug][27121][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.4 | Orbbec Gemini 335 RGB Camera
+[05/27 17:29:30.470137][debug][27121][UsbDeviceEnumerator.cpp:163]  - 2-4.4.4-9.6 | Orbbec Gemini 335 Imu
+[05/27 17:29:30.470206][info][27121][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[05/27 17:29:30.470215][debug][27121][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[05/27 17:29:30.470218][debug][27121][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[05/27 17:29:30.470222][info][27121][DeviceManager.cpp:15] Current found device(s): (1)
+[05/27 17:29:30.470226][info][27121][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[05/27 17:29:30.470229][debug][27121][DeviceManager.cpp:52] DeviceManager construct done!
+[05/27 17:29:30.968937][error][27121][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:36:20.062720][debug][16495][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[06/24 13:36:20.062998][debug][16495][Context.cpp:49] Config file version=1.1
+[06/24 13:36:20.063279][debug][16495][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[06/24 13:36:20.063292][info][16495][Context.cpp:68] Context created with config: default config!
+[06/24 13:36:20.063327][info][16495][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[06/24 13:36:20.063339][debug][16495][DeviceManager.cpp:30] DeviceManager init ...
+[06/24 13:36:20.063343][info][16495][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[06/24 13:36:20.064666][debug][16495][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[06/24 13:36:20.136952][debug][16495][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[06/24 13:36:20.136973][debug][16495][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[06/24 13:36:20.136976][debug][16495][UsbDeviceEnumerator.cpp:163]  - 2-5-7.0 | Orbbec Gemini 335 Depth Camera
+[06/24 13:36:20.136978][debug][16495][UsbDeviceEnumerator.cpp:163]  - 2-5-7.4 | Orbbec Gemini 335 RGB Camera
+[06/24 13:36:20.136980][debug][16495][UsbDeviceEnumerator.cpp:163]  - 2-5-7.6 | Orbbec Gemini 335 Imu
+[06/24 13:36:20.137100][info][16495][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[06/24 13:36:20.137109][debug][16495][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[06/24 13:36:20.137113][debug][16495][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[06/24 13:36:20.137118][info][16495][DeviceManager.cpp:15] Current found device(s): (1)
+[06/24 13:36:20.137122][info][16495][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[06/24 13:36:20.137125][debug][16495][DeviceManager.cpp:52] DeviceManager construct done!
+[06/24 13:43:50.321739][debug][17774][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[06/24 13:43:50.321796][debug][17774][Context.cpp:49] Config file version=1.1
+[06/24 13:43:50.321815][debug][17774][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[06/24 13:43:50.321825][info][17774][Context.cpp:68] Context created with config: default config!
+[06/24 13:43:50.321846][info][17774][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[06/24 13:43:50.321856][debug][17774][DeviceManager.cpp:30] DeviceManager init ...
+[06/24 13:43:50.321859][info][17774][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[06/24 13:43:50.322604][debug][17774][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[06/24 13:43:50.388671][debug][17774][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[06/24 13:43:50.388692][debug][17774][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[06/24 13:43:50.388697][debug][17774][UsbDeviceEnumerator.cpp:163]  - 2-5-8.0 | Orbbec Gemini 335 Depth Camera
+[06/24 13:43:50.388700][debug][17774][UsbDeviceEnumerator.cpp:163]  - 2-5-8.4 | Orbbec Gemini 335 RGB Camera
+[06/24 13:43:50.388703][debug][17774][UsbDeviceEnumerator.cpp:163]  - 2-5-8.6 | Orbbec Gemini 335 Imu
+[06/24 13:43:50.388766][info][17774][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[06/24 13:43:50.388776][debug][17774][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[06/24 13:43:50.388781][debug][17774][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[06/24 13:43:50.388786][info][17774][DeviceManager.cpp:15] Current found device(s): (1)
+[06/24 13:43:50.388792][info][17774][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[06/24 13:43:50.388796][debug][17774][DeviceManager.cpp:52] DeviceManager construct done!
+[06/24 13:43:50.897174][error][17774][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:44:06.630529][debug][17933][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[06/24 13:44:06.630569][debug][17933][Context.cpp:49] Config file version=1.1
+[06/24 13:44:06.630582][debug][17933][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[06/24 13:44:06.630588][info][17933][Context.cpp:68] Context created with config: default config!
+[06/24 13:44:06.630603][info][17933][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[06/24 13:44:06.630614][debug][17933][DeviceManager.cpp:30] DeviceManager init ...
+[06/24 13:44:06.630617][info][17933][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[06/24 13:44:06.631404][debug][17933][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[06/24 13:44:06.700987][debug][17933][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[06/24 13:44:06.701010][debug][17933][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[06/24 13:44:06.701015][debug][17933][UsbDeviceEnumerator.cpp:163]  - 2-5-8.0 | Orbbec Gemini 335 Depth Camera
+[06/24 13:44:06.701018][debug][17933][UsbDeviceEnumerator.cpp:163]  - 2-5-8.4 | Orbbec Gemini 335 RGB Camera
+[06/24 13:44:06.701021][debug][17933][UsbDeviceEnumerator.cpp:163]  - 2-5-8.6 | Orbbec Gemini 335 Imu
+[06/24 13:44:06.701094][info][17933][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[06/24 13:44:06.701104][debug][17933][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[06/24 13:44:06.701109][debug][17933][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[06/24 13:44:06.701114][info][17933][DeviceManager.cpp:15] Current found device(s): (1)
+[06/24 13:44:06.701120][info][17933][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[06/24 13:44:06.701124][debug][17933][DeviceManager.cpp:52] DeviceManager construct done!
+[06/24 13:44:07.201295][error][17933][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:47:35.125839][debug][18407][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[06/24 13:47:35.125870][debug][18407][Context.cpp:49] Config file version=1.1
+[06/24 13:47:35.125881][debug][18407][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[06/24 13:47:35.125886][info][18407][Context.cpp:68] Context created with config: default config!
+[06/24 13:47:35.125906][info][18407][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[06/24 13:47:35.125915][debug][18407][DeviceManager.cpp:30] DeviceManager init ...
+[06/24 13:47:35.125918][info][18407][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[06/24 13:47:35.126693][debug][18407][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[06/24 13:47:35.197080][debug][18407][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[06/24 13:47:35.197099][debug][18407][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[06/24 13:47:35.197102][debug][18407][UsbDeviceEnumerator.cpp:163]  - 2-5-8.0 | Orbbec Gemini 335 Depth Camera
+[06/24 13:47:35.197105][debug][18407][UsbDeviceEnumerator.cpp:163]  - 2-5-8.4 | Orbbec Gemini 335 RGB Camera
+[06/24 13:47:35.197107][debug][18407][UsbDeviceEnumerator.cpp:163]  - 2-5-8.6 | Orbbec Gemini 335 Imu
+[06/24 13:47:35.197177][info][18407][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[06/24 13:47:35.197186][debug][18407][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[06/24 13:47:35.197190][debug][18407][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[06/24 13:47:35.197194][info][18407][DeviceManager.cpp:15] Current found device(s): (1)
+[06/24 13:47:35.197198][info][18407][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[06/24 13:47:35.197201][debug][18407][DeviceManager.cpp:52] DeviceManager construct done!
+[06/24 13:47:35.736730][error][18407][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:47:35.737002][error][18407][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:47:50.664329][debug][18552][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[06/24 13:47:50.664415][debug][18552][Context.cpp:49] Config file version=1.1
+[06/24 13:47:50.664428][debug][18552][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[06/24 13:47:50.664448][info][18552][Context.cpp:68] Context created with config: default config!
+[06/24 13:47:50.664463][info][18552][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[06/24 13:47:50.664485][debug][18552][DeviceManager.cpp:30] DeviceManager init ...
+[06/24 13:47:50.664487][info][18552][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[06/24 13:47:50.665118][debug][18552][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[06/24 13:47:50.736867][debug][18552][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[06/24 13:47:50.736888][debug][18552][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[06/24 13:47:50.736892][debug][18552][UsbDeviceEnumerator.cpp:163]  - 2-5-8.0 | Orbbec Gemini 335 Depth Camera
+[06/24 13:47:50.736894][debug][18552][UsbDeviceEnumerator.cpp:163]  - 2-5-8.4 | Orbbec Gemini 335 RGB Camera
+[06/24 13:47:50.736896][debug][18552][UsbDeviceEnumerator.cpp:163]  - 2-5-8.6 | Orbbec Gemini 335 Imu
+[06/24 13:47:50.736962][info][18552][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[06/24 13:47:50.736971][debug][18552][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[06/24 13:47:50.736974][debug][18552][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[06/24 13:47:50.736979][info][18552][DeviceManager.cpp:15] Current found device(s): (1)
+[06/24 13:47:50.736983][info][18552][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[06/24 13:47:50.736986][debug][18552][DeviceManager.cpp:52] DeviceManager construct done!
+[06/24 13:47:51.269460][error][18552][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:47:51.269764][error][18552][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:54:03.365411][debug][19190][Context.cpp:30] Context creating, work_dir=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[06/24 13:54:03.365440][debug][19190][Context.cpp:49] Config file version=1.1
+[06/24 13:54:03.365451][debug][19190][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[06/24 13:54:03.365455][info][19190][Context.cpp:68] Context created with config: default config!
+[06/24 13:54:03.365468][info][19190][Context.cpp:73] Work directory=/home/kyle/Project/奥比中光3D相机/Gemini335-软件资料-阿凯爱玩机器人/02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.5-20240511-7dc8be9
+[06/24 13:54:03.365477][debug][19190][DeviceManager.cpp:30] DeviceManager init ...
+[06/24 13:54:03.365479][info][19190][LinuxPal.cpp:31] createObPal: create LinuxPal!
+[06/24 13:54:03.366125][debug][19190][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[06/24 13:54:03.432923][debug][19190][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[06/24 13:54:03.432944][debug][19190][UsbDeviceEnumerator.cpp:160] Current usb device port list:
+[06/24 13:54:03.432948][debug][19190][UsbDeviceEnumerator.cpp:163]  - 2-5-8.0 | Orbbec Gemini 335 Depth Camera
+[06/24 13:54:03.432950][debug][19190][UsbDeviceEnumerator.cpp:163]  - 2-5-8.4 | Orbbec Gemini 335 RGB Camera
+[06/24 13:54:03.432952][debug][19190][UsbDeviceEnumerator.cpp:163]  - 2-5-8.6 | Orbbec Gemini 335 Imu
+[06/24 13:54:03.433024][info][19190][LinuxPal.cpp:142] Create PollingDeviceWatcher!
+[06/24 13:54:03.433049][debug][19190][UsbDeviceEnumerator.cpp:68] Found 1 device(s):
+[06/24 13:54:03.433053][debug][19190][UsbDeviceEnumerator.cpp:71]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[06/24 13:54:03.433057][info][19190][DeviceManager.cpp:15] Current found device(s): (1)
+[06/24 13:54:03.433061][info][19190][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[06/24 13:54:03.433064][debug][19190][DeviceManager.cpp:52] DeviceManager construct done!
+[06/24 13:54:03.902880][error][19190][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[06/24 13:54:03.903210][error][19190][HostProtocol.cpp:420] Set property value failed! propertyId:63, rc:{statusCode: 9, respErrorCode: 2, msg: }
+[07/22 20:04:39.936082][debug][27068][Context.cpp:30] Context creating, work_dir=C:\Users\Kyle\Project\Gemini335-软件资料-阿凯爱玩机器人-V20240701\deepsense-gemini335-master\02.奥比中光-pyobbecsdk示例代码(Gemini335)
+[07/22 20:04:39.936541][debug][27068][Context.cpp:49] Config file version=1.1
+[07/22 20:04:39.936585][debug][27068][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[07/22 20:04:39.936614][info][27068][Context.cpp:68] Context created with config: default config!
+[07/22 20:04:39.936710][info][27068][Context.cpp:73] Work directory=C:\Users\Kyle\Project\Gemini335-软件资料-阿凯爱玩机器人-V20240701\deepsense-gemini335-master\02.奥比中光-pyobbecsdk示例代码(Gemini335), SDK version=v1.10.8-20240604-d1671a341
+[07/22 20:04:39.936823][debug][27068][DeviceManager.cpp:30] DeviceManager init ...
+[07/22 20:04:39.936842][info][27068][MfPal.cpp:103] createObPal: create WinPal!
+[07/22 20:04:39.936897][debug][27068][MfPal.cpp:108] WmfPal init ...
+[07/22 20:04:39.960666][debug][27068][MfPal.cpp:115] WmfPal created!
+[07/22 20:04:39.960691][debug][27068][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[07/22 20:04:39.995618][debug][27068][EnumeratorLibusb.cpp:322] queryDevicesInfo done!
+[07/22 20:04:39.995685][debug][27068][UsbDeviceEnumerator.cpp:162] Current usb device port list:
+[07/22 20:04:39.995780][debug][27068][UsbDeviceEnumerator.cpp:165]  - \\?\USB#VID_2BC5&PID_0800&MI_00#6&12F206E3&0&0000#{E5323777-F976-4F5B-9B55-B94699C46E44}\GLOBAL | Orbbec Gemini 335 Depth Camera
+[07/22 20:04:39.995798][debug][27068][UsbDeviceEnumerator.cpp:165]  - \\?\USB#VID_2BC5&PID_0800&MI_04#6&12F206E3&0&0004#{E5323777-F976-4F5B-9B55-B94699C46E44}\GLOBAL | Orbbec Gemini 335 RGB Camera
+[07/22 20:04:39.995808][debug][27068][UsbDeviceEnumerator.cpp:165]  - \\?\HID#VID_2BC5&PID_0800&MI_06#7&2933A17&0&0000#{4D1E55B2-F16F-11CF-88CB-001111000030} | Orbbec Gemini 335 Imu
+[07/22 20:04:39.996834][debug][27068][MfPal.cpp:214] Create WinEventDeviceWatcher!
+[07/22 20:04:39.997225][debug][27068][UsbDeviceEnumerator.cpp:70] Found 1 device(s):
+[07/22 20:04:39.997269][debug][27068][UsbDeviceEnumerator.cpp:73]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, connection: USB3.2
+[07/22 20:04:39.997294][info][27068][DeviceManager.cpp:15] Current found device(s): (1)
+[07/22 20:04:39.997401][info][27068][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P00049, Connection: USB3.2
+[07/22 20:04:39.997583][debug][27068][DeviceManager.cpp:52] DeviceManager construct done!

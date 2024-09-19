@@ -1,0 +1,47 @@
+# RGB相机
+rgb_camera:
+  # 自动曝光
+  auto_exposure: True
+  # 手动设置曝光值
+  #   注意事项: 当auto_exposure=False时有效
+  exposure: 10000
+  # 增益
+  #   注意事项: 当auto_exposure=False时有效
+  gain: 101
+  # 相机亮度
+  #   注意事项: 当auto_exposure=True时有效
+  brightness: 52
+  # 自动白平衡
+  auto_white_balance: True
+  # 手动设置白平衡
+  #   注意事项: 当auto_white_balance=False时有效
+  white_balance: 5000
+  # 锐度
+  sharpness: 99
+  # 饱和度
+  saturation: 32
+  # 对比度
+  contrast: 40
+  # 电力线频率
+  power_line_frequency: 0
+# 深度相机
+depth_camera:
+  # 自动曝光
+  auto_exposure: True
+  # 手动设置曝光值
+  #   注意事项: 当auto_exposure=False时有效
+  exposure: 3000
+  # 增益
+  #   注意事项: 当auto_exposure=False时有效
+  gain: 1000
+  # 精度等级
+  # 序号[0] 精度等级 1 mm
+  # 序号[1] 精度等级 0.8 mm
+  # 序号[2] 精度等级 0.2 mm
+  # 序号[3] 精度等级 0.1 mm
+  precision_level: 3
+  # 深度工作模式
+  # 序号[0] 名称: Unbinned Dense Default
+  # 序号[1] 名称: Binned Sparse Default
+  # 序号[2] 名称: Unbinned Sparse Default
+  depth_work_mode: 0
