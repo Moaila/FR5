@@ -105,7 +105,7 @@ class RobotArmApp:
         # 调用外部 Python 脚本来控制机械臂
         try:
             # 使用完整路径
-            self.robot_process = subprocess.Popen(['python', '/home/tom/FR5/new_conrol/FR5_control_new.py'])
+            self.robot_process = subprocess.Popen(['python', '/home/tom/FR5/new_conrol/FR5_control_robotarm.py'])
             self.control_button.pack_forget()  # 隐藏控制按钮
             self.stop_button.pack(pady=20)  # 显示停止按钮
         except Exception as e:

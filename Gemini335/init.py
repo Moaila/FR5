@@ -21,7 +21,7 @@ img_bgr_undistor = camera.remove_distortion(img_bgr)
 plt.imshow(img_bgr_undistor[:, :, ::-1])
 
 # 图像保存路径
-img_path = "/home/tom/FR5/photo.png"
+img_path = "/home/tom/FR5/photo/photo1.png"
 # 图像保存
 ret = cv2.imwrite(img_path, img_bgr)
 # 输出日志
