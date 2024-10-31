@@ -25,7 +25,7 @@ error_codes = {
 }
 
 # 初始化机器人
-robot = Robot.RPC('192.168.59.6')
+robot = Robot.RPC('192.168.58.6')
 
 # 启动伺服模式
 ret = robot.ServoMoveStart()

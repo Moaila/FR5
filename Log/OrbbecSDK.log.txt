@@ -1963,3 +1963,155 @@
 [10/27 16:24:56.724176][info][23942][DeviceManager.cpp:15] Current found device(s): (1)
 [10/27 16:24:56.724185][info][23942][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
 [10/27 16:24:56.724192][debug][23942][DeviceManager.cpp:52] DeviceManager construct done!
+[10/30 20:11:05.513011][debug][6299][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/30 20:11:05.513038][debug][6299][Context.cpp:49] Config file version=1.1
+[10/30 20:11:05.513214][debug][6299][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/30 20:11:05.513218][info][6299][Context.cpp:68] Context created with config: default config!
+[10/30 20:11:05.513228][info][6299][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/30 20:11:05.513233][debug][6299][DeviceManager.cpp:30] DeviceManager init ...
+[10/30 20:11:05.513259][info][6299][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/30 20:11:05.513781][debug][6299][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/30 20:11:05.615904][debug][6299][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/30 20:11:05.616002][debug][6299][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/30 20:11:05.616022][debug][6299][UsbDeviceEnumerator.cpp:166]  - 4-3-3.0 | Orbbec Gemini 335 Depth Camera
+[10/30 20:11:05.616034][debug][6299][UsbDeviceEnumerator.cpp:166]  - 4-3-3.4 | Orbbec Gemini 335 RGB Camera
+[10/30 20:11:05.616043][debug][6299][UsbDeviceEnumerator.cpp:166]  - 4-3-3.6 | Orbbec Gemini 335 Imu
+[10/30 20:11:05.616335][info][6299][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/30 20:11:05.616398][debug][6299][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/30 20:11:05.616417][debug][6299][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/30 20:11:05.616609][info][6299][DeviceManager.cpp:15] Current found device(s): (1)
+[10/30 20:11:05.616642][info][6299][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/30 20:11:05.616663][debug][6299][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:17:46.065903][debug][11246][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:17:46.066220][debug][11246][Context.cpp:49] Config file version=1.1
+[10/31 13:17:46.066394][debug][11246][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:17:46.066406][info][11246][Context.cpp:68] Context created with config: default config!
+[10/31 13:17:46.066415][info][11246][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:17:46.066420][debug][11246][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:17:46.066422][info][11246][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:17:46.066861][debug][11246][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:17:46.165513][debug][11246][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:17:46.165757][debug][11246][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:17:46.165805][debug][11246][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:17:46.165814][debug][11246][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:17:46.165820][debug][11246][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:17:46.166053][info][11246][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:17:46.166110][debug][11246][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:17:46.166156][debug][11246][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:17:46.166293][info][11246][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:17:46.166313][info][11246][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:17:46.166328][debug][11246][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:18:18.087782][debug][11539][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:18:18.087806][debug][11539][Context.cpp:49] Config file version=1.1
+[10/31 13:18:18.087814][debug][11539][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:18:18.087816][info][11539][Context.cpp:68] Context created with config: default config!
+[10/31 13:18:18.087824][info][11539][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:18:18.087828][debug][11539][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:18:18.087829][info][11539][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:18:18.088290][debug][11539][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:18:18.184944][debug][11539][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:18:18.185000][debug][11539][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:18:18.185008][debug][11539][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:18:18.185012][debug][11539][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:18:18.185016][debug][11539][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:18:18.185148][info][11539][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:18:18.185169][debug][11539][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:18:18.185176][debug][11539][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:18:18.185185][info][11539][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:18:18.185195][info][11539][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:18:18.185204][debug][11539][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:18:40.239560][debug][11722][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:18:40.239587][debug][11722][Context.cpp:49] Config file version=1.1
+[10/31 13:18:40.239596][debug][11722][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:18:40.239599][info][11722][Context.cpp:68] Context created with config: default config!
+[10/31 13:18:40.239607][info][11722][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:18:40.239613][debug][11722][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:18:40.239614][info][11722][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:18:40.240083][debug][11722][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:18:40.337334][debug][11722][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:18:40.337437][debug][11722][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:18:40.337448][debug][11722][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:18:40.337455][debug][11722][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:18:40.337460][debug][11722][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:18:40.337703][info][11722][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:18:40.337742][debug][11722][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:18:40.337754][debug][11722][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:18:40.337769][info][11722][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:18:40.337810][info][11722][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:18:40.337824][debug][11722][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:21:44.588589][debug][12152][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:21:44.588617][debug][12152][Context.cpp:49] Config file version=1.1
+[10/31 13:21:44.588625][debug][12152][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:21:44.588628][info][12152][Context.cpp:68] Context created with config: default config!
+[10/31 13:21:44.588637][info][12152][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:21:44.588640][debug][12152][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:21:44.588642][info][12152][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:21:44.589086][debug][12152][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:21:44.690765][debug][12152][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:21:44.690836][debug][12152][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:21:44.690847][debug][12152][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:21:44.690853][debug][12152][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:21:44.690858][debug][12152][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:21:44.691072][info][12152][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:21:44.691104][debug][12152][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:21:44.691115][debug][12152][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:21:44.691129][info][12152][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:21:44.691141][info][12152][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:21:44.691152][debug][12152][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:32:17.592814][debug][13472][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:32:17.592842][debug][13472][Context.cpp:49] Config file version=1.1
+[10/31 13:32:17.592850][debug][13472][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:32:17.592853][info][13472][Context.cpp:68] Context created with config: default config!
+[10/31 13:32:17.592885][info][13472][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:32:17.592889][debug][13472][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:32:17.592891][info][13472][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:32:17.593302][debug][13472][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:32:17.688834][debug][13472][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:32:17.688898][debug][13472][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:32:17.688907][debug][13472][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:32:17.688912][debug][13472][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:32:17.688917][debug][13472][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:32:17.689066][info][13472][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:32:17.689091][debug][13472][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:32:17.689099][debug][13472][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:32:17.689115][info][13472][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:32:17.689126][info][13472][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:32:17.689136][debug][13472][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:33:29.002702][debug][13854][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:33:29.002749][debug][13854][Context.cpp:49] Config file version=1.1
+[10/31 13:33:29.002762][debug][13854][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:33:29.002768][info][13854][Context.cpp:68] Context created with config: default config!
+[10/31 13:33:29.002784][info][13854][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:33:29.002807][debug][13854][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:33:29.002810][info][13854][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:33:29.003833][debug][13854][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:33:29.100613][debug][13854][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:33:29.100713][debug][13854][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:33:29.100731][debug][13854][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:33:29.100741][debug][13854][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:33:29.100748][debug][13854][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:33:29.100933][info][13854][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:33:29.100978][debug][13854][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:33:29.100992][debug][13854][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:33:29.101007][info][13854][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:33:29.101024][info][13854][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:33:29.101038][debug][13854][DeviceManager.cpp:52] DeviceManager construct done!
+[10/31 13:34:28.561478][debug][14079][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[10/31 13:34:28.561510][debug][14079][Context.cpp:49] Config file version=1.1
+[10/31 13:34:28.561520][debug][14079][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[10/31 13:34:28.561524][info][14079][Context.cpp:68] Context created with config: default config!
+[10/31 13:34:28.561540][info][14079][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[10/31 13:34:28.561546][debug][14079][DeviceManager.cpp:30] DeviceManager init ...
+[10/31 13:34:28.561549][info][14079][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[10/31 13:34:28.561987][debug][14079][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[10/31 13:34:28.663829][debug][14079][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[10/31 13:34:28.663897][debug][14079][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[10/31 13:34:28.663904][debug][14079][UsbDeviceEnumerator.cpp:166]  - 4-2-6.0 | Orbbec Gemini 335 Depth Camera
+[10/31 13:34:28.663908][debug][14079][UsbDeviceEnumerator.cpp:166]  - 4-2-6.4 | Orbbec Gemini 335 RGB Camera
+[10/31 13:34:28.663911][debug][14079][UsbDeviceEnumerator.cpp:166]  - 4-2-6.6 | Orbbec Gemini 335 Imu
+[10/31 13:34:28.664019][info][14079][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[10/31 13:34:28.664044][debug][14079][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[10/31 13:34:28.664050][debug][14079][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[10/31 13:34:28.664057][info][14079][DeviceManager.cpp:15] Current found device(s): (1)
+[10/31 13:34:28.664071][info][14079][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[10/31 13:34:28.664084][debug][14079][DeviceManager.cpp:52] DeviceManager construct done!

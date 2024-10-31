@@ -49,12 +49,12 @@ def robot_arm_thread():
     }
 
     # 初始化机器人
-    robot = Robot.RPC('192.168.59.6')
-    ret = robot.ServoMoveStart()
-    if ret != 0:
-        error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
-        print(f"伺服启动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
-        return
+    robot = Robot.RPC('192.168.58.6')
+    # ret = robot.ServoMoveStart()
+    # if ret != 0:
+    #     error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
+    #     print(f"伺服启动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
+    #     return
 
     # 初始化 pygame
     pygame.init()
@@ -165,7 +165,7 @@ def robot_arm_thread():
         print("控制结束。")
 
     finally:
-        robot.ServoMoveEnd()
+        # robot.ServoMoveEnd()
         pygame.quit()
 
 # 启动线程
