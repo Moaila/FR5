@@ -2115,3 +2115,41 @@
 [10/31 13:34:28.664057][info][14079][DeviceManager.cpp:15] Current found device(s): (1)
 [10/31 13:34:28.664071][info][14079][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
 [10/31 13:34:28.664084][debug][14079][DeviceManager.cpp:52] DeviceManager construct done!
+[11/01 12:20:40.997034][debug][6482][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[11/01 12:20:40.997388][debug][6482][Context.cpp:49] Config file version=1.1
+[11/01 12:20:40.997608][debug][6482][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[11/01 12:20:40.997623][info][6482][Context.cpp:68] Context created with config: default config!
+[11/01 12:20:40.997642][info][6482][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[11/01 12:20:40.997651][debug][6482][DeviceManager.cpp:30] DeviceManager init ...
+[11/01 12:20:40.997655][info][6482][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[11/01 12:20:40.998246][debug][6482][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[11/01 12:20:41.104642][debug][6482][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[11/01 12:20:41.104764][debug][6482][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[11/01 12:20:41.104784][debug][6482][UsbDeviceEnumerator.cpp:166]  - 4-3-2.0 | Orbbec Gemini 335 Depth Camera
+[11/01 12:20:41.104794][debug][6482][UsbDeviceEnumerator.cpp:166]  - 4-3-2.4 | Orbbec Gemini 335 RGB Camera
+[11/01 12:20:41.104802][debug][6482][UsbDeviceEnumerator.cpp:166]  - 4-3-2.6 | Orbbec Gemini 335 Imu
+[11/01 12:20:41.105005][info][6482][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[11/01 12:20:41.105066][debug][6482][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[11/01 12:20:41.105081][debug][6482][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[11/01 12:20:41.105222][info][6482][DeviceManager.cpp:15] Current found device(s): (1)
+[11/01 12:20:41.105249][info][6482][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[11/01 12:20:41.105266][debug][6482][DeviceManager.cpp:52] DeviceManager construct done!
+[11/01 12:21:16.748548][debug][6688][Context.cpp:30] Context creating, work_dir=/home/tom/FR5
+[11/01 12:21:16.748575][debug][6688][Context.cpp:49] Config file version=1.1
+[11/01 12:21:16.748583][debug][6688][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[11/01 12:21:16.748586][info][6688][Context.cpp:68] Context created with config: default config!
+[11/01 12:21:16.748619][info][6688][Context.cpp:73] Work directory=/home/tom/FR5, SDK version=v1.10.12-20240809-69b687f
+[11/01 12:21:16.748623][debug][6688][DeviceManager.cpp:30] DeviceManager init ...
+[11/01 12:21:16.748625][info][6688][LinuxPal.cpp:32] createObPal: create LinuxPal!
+[11/01 12:21:16.749032][debug][6688][DeviceManager.cpp:34] Enable USB Device Enumerator ...
+[11/01 12:21:16.851417][debug][6688][EnumeratorLibusb.cpp:324] queryDevicesInfo done!
+[11/01 12:21:16.851501][debug][6688][UsbDeviceEnumerator.cpp:163] Current usb device port list:
+[11/01 12:21:16.851512][debug][6688][UsbDeviceEnumerator.cpp:166]  - 4-3-2.0 | Orbbec Gemini 335 Depth Camera
+[11/01 12:21:16.851517][debug][6688][UsbDeviceEnumerator.cpp:166]  - 4-3-2.4 | Orbbec Gemini 335 RGB Camera
+[11/01 12:21:16.851522][debug][6688][UsbDeviceEnumerator.cpp:166]  - 4-3-2.6 | Orbbec Gemini 335 Imu
+[11/01 12:21:16.851725][info][6688][LinuxPal.cpp:143] Create PollingDeviceWatcher!
+[11/01 12:21:16.851757][debug][6688][UsbDeviceEnumerator.cpp:71] Found 1 device(s):
+[11/01 12:21:16.851770][debug][6688][UsbDeviceEnumerator.cpp:74]   - Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, connection: USB3.2
+[11/01 12:21:16.851785][info][6688][DeviceManager.cpp:15] Current found device(s): (1)
+[11/01 12:21:16.851798][info][6688][DeviceManager.cpp:24] 	- Name: Orbbec Gemini 335, PID: 0x0800, SN/ID: CP1L44P0007K, Connection: USB3.2
+[11/01 12:21:16.851812][debug][6688][DeviceManager.cpp:52] DeviceManager construct done!
