@@ -7,9 +7,10 @@ import pygame
 from kyle_robot_toolbox.camera import Gemini335
 from fairino import Robot
 
+
 # 摄像头处理函数
 def camera_thread():
-    # 创建相机对象
+ # 创建相机对象
     camera = Gemini335()
     # 创建窗口
     win_flag = cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO | cv2.WINDOW_GUI_EXPANDED
@@ -158,7 +159,7 @@ def robot_arm_thread():
                 new_j6 = current_joint_pos[5] + angular_velocity_j6 * dt
                 robot.ServoJ([current_joint_pos[0], current_joint_pos[1], current_joint_pos[2], 
                              current_joint_pos[3], current_joint_pos[4], new_j6])
-
+            
             time.sleep(dt)
 
     except KeyboardInterrupt:
