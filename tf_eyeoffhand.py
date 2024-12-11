@@ -10,7 +10,7 @@ import json
 import time
 import cv2
 import numpy as np
-from fairino import Robot
+from chemistry import ChemistryTest
 from std_msgs.msg import Float32MultiArray
 
 # 使用说明：后面打包为roslaunch，使用时先开启arucotag6DOF，在启动tf即可
@@ -23,29 +23,46 @@ from std_msgs.msg import Float32MultiArray
 # 标定利用opencv4中的calibrateHandEye()函数
 # 传入7个参数，前四个是输入，然后是两个输出，最后是标定方法（默认tsai）
 
-camera2base = [ 
- [ 0.99885901,  0.02414404  ,0.04120379,99.50256158],
- [ 0.02214817, -0.99859083 , 0.04822672,-542.01673407],
- [ 0.04231012 ,-0.0472591 , -0.99798619,846.15889269],
- [ 0.0,0.0,0.0,1.0]
-]
+# camera2base = [ 
+#  [ 0.99885901,  0.02414404  ,0.04120379,99.50256158],
+#  [ 0.02214817, -0.99859083 , 0.04822672,-542.01673407],
+#  [ 0.04231012 ,-0.0472591 , -0.99798619,846.15889269],
+#  [ 0.0,0.0,0.0,1.0]
+# ]
+# ]
+
+camera2base = [[0.9985750339347319, 0.022189620209739077, 0.048533723916429926, 77.91185167719914-23], 
+               [0.019898166421089946, -0.9986873577260162, 0.047197717013712184, -538.246214051216-9], 
+               [0.049517315914004385, -0.046164729753085165, -0.9977057948871988, 840.3848447109431], 
+               [0.0, 0.0, 0.0, 1.0]]
+
 
 tag_trans_mat = []
 fr5_A = []
-robot = Robot.RPC('192.168.59.6')
+fr5_B = []
 
 def init():
     '''
-    初始化函数，包含机械臂初始化
+    初始化函数，包含双机械臂复位
     '''
     global fr5_A
-    fr5_A = robot
+    global fr5_B
+    fr5_A = ChemistryTest(1)
+    fr5_B = ChemistryTest(2)
     time.sleep(0.5)
-# 补充机械臂初始化的函数代码
+    fr5_A.dou_go_start(fr5_B)
+
+def Go_to_start_zone(self,v = 30.0, open = 1):
+    """
+    初始化位姿，打开夹爪
+    """
+    self.point_safe_move([0.0, -250.0, 400.0, 90.0, 0.0, 0.0], v, 200.0)
+    if open:
+        self.MoveGripper(1, 100, 50, 10, 10000, 1)
 
 def save_to_file(matrix):
     # 创建log文件夹（如果不存在）
-    log_dir = "/home/tom/FR5/demo_ws/src/frcobot_ros/fr5_moveit_config/log"
+    log_dir = "/home/zjh/HN-1/demo_ws/src/frcobot_ros/fr5_moveit_config/log"
     file_name = "1.txt"
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
@@ -58,7 +75,7 @@ def save_to_file(matrix):
     while os.path.exists(file_path):
         index += 1
         file_path = os.path.join(log_dir, f"{index}.txt")
-        print('repeat file name')
+        print('chongfu')
 
     # 将矩阵转换为Python列表
     matrix_list = matrix.tolist()
@@ -80,9 +97,6 @@ def camera_callback2(rece_tag_trans_mat):
         None
     '''
     global tag_trans_mat
-    # rospy.loginfo("自发自收收到的tag_trans_mat数据: %s" % str(rece_tag_trans_mat.data))
-    # print("Received tag_trans_mat:\n", rece_tag_trans_mat.data, '\n')
-    # exit()
     if rece_tag_trans_mat.data == []:
         pass
     else :
@@ -90,27 +104,6 @@ def camera_callback2(rece_tag_trans_mat):
         tag_trans_mat = list(tag_trans_mat)
         tag_trans_mat = [tag_trans_mat[i:i+4] for i in range(0, len(tag_trans_mat), 4)]
         # print(tag_trans_mat,'\n')
-
-# def camera_callback2(rece_tag_trans_mat):
-#     '''
-#     回调函数，得到tag_to_camera的变换矩阵
-#     由于ros功能限制，在此将二维数组压缩为一维数组接收，需要做对应解码处理
-#     @输入：
-#         rece_tag_trans_mat：ros发来的tag2camera信息 (Float32MultiArray类型)
-#     @输出：
-#         None
-#     '''
-#     global tag_trans_mat
-#     data = rece_tag_trans_mat.data
-#     if len(data) == 16:
-#         # 将一维数组重塑为4x4矩阵
-#         tag_trans_mat = np.array(data).reshape(4,4)
-#         print("Received 4x4 tag_trans_mat:\n", tag_trans_mat, '\n')
-#     else:
-#         # 数据为空或者长度不匹配时输出提示
-#         print("Received empty or invalid tag_trans_mat data:\n", data, '\n')
-#         tag_trans_mat = np.array([])  # 根据需求设置为空或默认值
-
 
 def get_transform_mat(X,Y,Z,RX,RY,RZ):
     '''
@@ -155,7 +148,7 @@ def get_transform_mat(X,Y,Z,RX,RY,RZ):
                 [0, 0, 0, 1]])
     return end_to_base
     
-def tf_get_obj_to_base(obj2camera,camera2base):
+def tf_get_obj_to_base(obj2camera,camera2base1):
     '''
     得到obj2base变换矩阵
     @输入：
@@ -164,7 +157,8 @@ def tf_get_obj_to_base(obj2camera,camera2base):
     @输出：
         obj2base：物体在机械臂底座下的变换矩阵
     '''
-    obj2base = np.dot(camera2base,obj2camera)
+    camera2base1 = camera2base
+    obj2base = np.dot(camera2base1,obj2camera)
     return obj2base
     
 def get_RT_from_transform_mat(transform_mat):
@@ -203,22 +197,21 @@ def main():
     R_camera2base = np.array(R_camera2base)
     T_camera2base = np.array(T_camera2base)
     global tag_trans_mat
-    rospy.init_node('tag_trans_mat_listener', anonymous=True)
     rospy.Subscriber('/tag_trans_mat',Float32MultiArray,camera_callback2)
     sample_times = input('------请输入采集次数------')
     input('------等待按下回车开始采集数据------')
     for i in range(int(sample_times)):
-        fr5_A_end = fr5_A.robot.GetActualToolFlangePose(0)
-        fr5_A_end = fr5_A_end[-6:]# 得到机械臂末端xyz，rxryrz
+        fr5_B_end = fr5_B.robot.GetActualToolFlangePose(0)
+        fr5_B_end = fr5_B_end[-6:]# 得到机械臂末端xyz，rxryrz
 
         # 得到end2base矩阵
-        end2base = get_transform_mat(fr5_A_end[0],fr5_A_end[1],fr5_A_end[2],fr5_A_end[3],fr5_A_end[4],fr5_A_end[5])
+        end2base = get_transform_mat(fr5_B_end[0],fr5_B_end[1],fr5_B_end[2],fr5_B_end[3],fr5_B_end[4],fr5_B_end[5])
         # print('end2base:',end2base)
 
         # 得到并处理base2end矩阵
         base2end = np.linalg.inv([end2base])
         base2end = base2end[0]
-        print('base2end:',base2end)
+        # print('base2end:',base2end)
 
         # 得到base2end的旋转矩阵与平移向量
         R_base2end , T_base2end = get_RT_from_transform_mat(base2end)

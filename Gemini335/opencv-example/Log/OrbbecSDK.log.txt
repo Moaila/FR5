@@ -1,0 +1,24 @@
+[2023-12-25 15:46:57.842862][debug][17646][Context.cpp:28] Context creating
+[2023-12-25 15:46:57.842910][debug][17646][Context.cpp:47] Config file version=1.1
+[2023-12-25 15:46:57.842926][debug][17646][FrameBufferManager.cpp:23] Max global frame buffer size updated! size=2048.000MB
+[2023-12-25 15:46:57.842937][info][17646][Context.cpp:66] Context created with config: default config!
+[2023-12-25 15:46:57.842955][debug][17646][DeviceManager.cpp:67] DeviceManager init ...
+[2023-12-25 15:46:57.842961][debug][17646][LinuxPal.cpp:35] createObPal: create LinuxPal!
+[2023-12-25 15:46:57.921965][debug][17646][EnumeratorLibusb.cpp:323] queryDevicesInfo done!
+[2023-12-25 15:46:57.922000][debug][17646][ObV4lDevice.cpp:341] Found video4linux: video5
+[2023-12-25 15:46:57.922205][debug][17646][ObV4lDevice.cpp:341] Found video4linux: video3
+[2023-12-25 15:46:57.922369][debug][17646][ObV4lDevice.cpp:341] Found video4linux: video1
+[2023-12-25 15:46:57.922541][debug][17646][ObV4lDevice.cpp:341] Found video4linux: video4
+[2023-12-25 15:46:57.922732][debug][17646][ObV4lDevice.cpp:341] Found video4linux: video2
+[2023-12-25 15:46:57.922906][debug][17646][ObV4lDevice.cpp:341] Found video4linux: video0
+[2023-12-25 15:46:57.923094][debug][17646][DeviceManager.cpp:539] Current usb device port list:
+[2023-12-25 15:46:57.923106][debug][17646][DeviceManager.cpp:542]  - 1-11.4.3-15.0 | Orbbec Gemini 2 Depth Camera
+[2023-12-25 15:46:57.923109][debug][17646][DeviceManager.cpp:542]  - 1-11.4.3-15.2 | Orbbec Gemini 2 IR Camera
+[2023-12-25 15:46:57.923111][debug][17646][DeviceManager.cpp:542]  - 1-11.4.3-15.4 | Orbbec Gemini 2 RGB Camera
+[2023-12-25 15:46:57.923113][debug][17646][DeviceManager.cpp:542]  - 1-11.4.3-15.6 | Orbbec Gemini Data Channel
+[2023-12-25 15:46:57.923115][debug][17646][DeviceManager.cpp:542]  - 1-11.4.3-15.7 | Orbbec Gemini 2 IMU
+[2023-12-25 15:46:57.923160][info][17646][DeviceManager.cpp:562] Found 1 device(s):
+[2023-12-25 15:46:57.923168][info][17646][DeviceManager.cpp:564]   - Name: Gemini335, PID: 0x0670, SN/ID: AY3A131006E
+[2023-12-25 15:46:57.923229][info][17646][LinuxPal.cpp:109] Create PollingDeviceWatcher!
+[2023-12-25 15:46:57.923237][debug][17646][DeviceManager.cpp:129] DeviceManager init done!
+[2023-12-25 15:46:57.923239][debug][17646][DeviceManager.cpp:63] DeviceManager construct done!
