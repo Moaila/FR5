@@ -1,0 +1,16 @@
+
+path: D:\Project\Dian\yolopose\unitydata8-5\images\ # dataset root dir
+train: train
+val: val
+
+
+kpt_shape: [2, 3] # number of keypoints, number of dims (2 for x,y or 3 for x,y,visible)
+flip_idx: [0, 1]
+
+# Classes
+names:
+  0: luoding
+  1: chilun
+  2: luomu
+  3: luoshuang
+

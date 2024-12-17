@@ -1,5 +1,4 @@
 #!/bin/python3
-#嘉航学长编写，李文皓修改，适用于获取六自由度。夹取杯子的任务暂时不需要六自由度。
 # -*- coding: utf-8 -*-
 '''
 眼在手内 末端需要与相机保持相对静止
@@ -33,21 +32,19 @@ camera2base = [
 
 tag_trans_mat = []
 fr5_A = []
-
+robot = Robot.RPC('192.168.59.6')
 def init():
     '''
     实例化机械臂，创建机械臂对象
     '''
     global fr5_A
-    '''
-    '''
-    fr5_A = Robot.RPC('192.168.59.6')
+    fr5_A = robot
     time.sleep(0.5)
 
 def save_to_file(matrix):
     # 创建log文件夹（如果不存在）
-    log_dir = "/home/tom/FR5/Gemini335/log"
-    file_name = "1.txt"
+    log_dir = "/home/tom/FR5/demo_ws/src/frcobot_ros/fr5_moveit_config/log"
+    file_name = "眼在手上标定结果.txt"
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
@@ -59,7 +56,7 @@ def save_to_file(matrix):
     while os.path.exists(file_path):
         index += 1
         file_path = os.path.join(log_dir, f"{index}.txt")
-        print('chongfu')
+        print('repeat file name')
 
     # 将矩阵转换为Python列表
     matrix_list = matrix.tolist()
@@ -195,6 +192,7 @@ def main():
     R_camera2end = np.array(R_camera2end)
     T_camera2end = np.array(T_camera2end)
     global tag_trans_mat
+    rospy.init_node('tag_trans_mat_listener', anonymous=True)
     rospy.Subscriber('/tag_trans_mat',Float32MultiArray,camera_callback2)
     sample_times = input('------请输入采集次数------')
     input('------等待按下回车开始采集数据------')
