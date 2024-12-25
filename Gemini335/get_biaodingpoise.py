@@ -198,7 +198,7 @@ camera = Gemini335()
 
 # 创建ArucoTag检测器
 arucotag = ArucoTag(camera, 
-    config_path="/home/tom/FR5/Gemini335/opencv-example/config/arucotag/arucotag.yaml")
+    config_path="/home/newplace/FR5/Gemini335/opencv-example/config/arucotag/arucotag.yaml")
 
 # 创建ArucoTag可视化窗口
 aruco_size = arucotag.config["aruco_size"]/1000.0
@@ -209,7 +209,7 @@ visualizer = ArucoTagVisualizer(camera,
 visualizer.create_window()
 
 # 配置视角
-json_path = "/home/tom/FR5/Gemini335/opencv-example/config/arucotag/render_option.json"
+json_path = "/home/newplace/FR5/Gemini335/opencv-example/config/arucotag/render_option.json"
 trajectory = json.load(open(json_path, "r", encoding="utf-8"))
 view_point = trajectory["trajectory"][0]
 

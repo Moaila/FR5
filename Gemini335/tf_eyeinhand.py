@@ -29,6 +29,11 @@ camera2base = [
  [ 0.04231012 ,-0.0472591 , -0.99798619,846.15889269],
  [ 0.0,0.0,0.0,1.0]
 ]
+# 定义保存的文件路径
+output_file = "fr5_A_end_outputs.json"
+
+# 初始化一个列表用于存储所有的 fr5_A_end 数据
+all_fr5_A_end = []
 
 tag_trans_mat = []
 fr5_A = []
@@ -197,8 +202,16 @@ def main():
     sample_times = input('------请输入采集次数------')
     input('------等待按下回车开始采集数据------')
     for i in range(int(sample_times)):
-        fr5_A_end = fr5_A.robot.GetActualToolFlangePose(0)
+        fr5_A_end = fr5_A.robot.GetActualTCPPose(0)
         fr5_A_end = fr5_A_end[-6:]# 得到机械臂末端xyz，rxryrz
+        print('fr5_A_end',fr5_A_end)
+        
+        # 将数据追加到列表中
+        all_fr5_A_end.append(fr5_A_end)
+
+        # 即时保存到同一个文件中
+        with open(output_file, "w") as f:
+            json.dump(all_fr5_A_end, f, indent=4)
 
         # 得到end2base矩阵
         end2base = get_transform_mat(fr5_A_end[0],fr5_A_end[1],fr5_A_end[2],fr5_A_end[3],fr5_A_end[4],fr5_A_end[5])
