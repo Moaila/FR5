@@ -13,7 +13,7 @@ import numpy as np
 from std_msgs.msg import Float32MultiArray
 from fairino import Robot
 
-# 使用说明：后面打包为roslaunch，使用时先开启arucotag6DOF，在启动tf_eyeinhand即可
+# 使用说明：后面打包为roslaunch，使用时先开启get_biaodingpoise，在启动tf_eyeinhand即可
 
 # 最终目的，obj_to_base,需要end_to_base(机械臂读取),cam_to_end（标定得到）,obj_to_cam(视觉程序)
 # 其中，camera_to_end需要标定得到，通过end_to_base（机械臂读取）,tag_to_camera(视觉程序读)加载入OpenCV函数

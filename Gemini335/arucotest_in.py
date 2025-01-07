@@ -167,7 +167,7 @@ if __name__ == "__main__":
     robot = Robot.RPC('192.168.59.6')
     arucotag_config = "/home/newplace/FR5/Gemini335/opencv-example/config/arucotag/arucotag.yaml"
     render_option = "/home/newplace/FR5/Gemini335/opencv-example/config/arucotag/render_option.json"
-    aruco_id_need = 0  # 需要检测的Aruco ID
+    aruco_id_need = 1  # 需要检测的Aruco ID
     xyz = get_qrcode_xyz(arucotag_config, render_option, aruco_id_need)
     if xyz != (None, None, None):
         print(f"指定Aruco ID {aruco_id_need}的坐标: x={xyz[0]:.3f}, y={xyz[1]:.3f}, z={xyz[2]:.3f}")
