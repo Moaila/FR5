@@ -217,15 +217,6 @@ def main():
         end2base = get_transform_mat(fr5_A_end[0],fr5_A_end[1],fr5_A_end[2],fr5_A_end[3],fr5_A_end[4],fr5_A_end[5])
         print('end2base:',end2base)
         R_end2base, T_end2base = get_RT_from_transform_mat(end2base)
-        # 得到并处理base2end矩阵
-        # base2end = np.linalg.inv([end2base])
-        # base2end = base2end[0]
-        # print('base2end:',base2end)
-
-        # 得到base2end的旋转矩阵与平移向量
-        # R_base2end , T_base2end = get_RT_from_transform_mat(base2end)
-
-        # 得到tag2camera的旋转矩阵与平移向量
         print('tag_trans_mat',tag_trans_mat)
         tag_trans_mat = np.array(tag_trans_mat)
         R_tag2camera , T_tag2camera = get_RT_from_transform_mat(tag_trans_mat)

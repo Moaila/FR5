@@ -1,0 +1,9 @@
+names:
+  0: redbutton
+  1: Latte
+  2: milk
+  3: Espresso
+  4: Long coffee
+  5: Hot water
+  6: Cappuccino
+  7: button

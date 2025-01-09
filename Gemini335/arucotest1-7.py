@@ -144,7 +144,7 @@ if __name__ == "__main__":
     aruco_id_need = 1  # 需要检测的Aruco ID
     xyz = get_qrcode_xyz(arucotag_config, render_option, aruco_id_need)
     print(f"相机坐标系到机器人基坐标系的坐标：\n{xyz}")
-    exit()
+    exit(0)
     robot = Robot.RPC('192.168.59.6')
     robot.ActGripper(1,0)
     time.sleep(2)
