@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 '''
-眼在手内标定程序，自动获取数据并完成Tsai-Lenz手眼标定。
+@author: 李文皓
+@功能：眼在手内标定程序，自动获取数据并完成Tsai-Lenz手眼标定。
+@使用方法：首先启动get_biaodingpoise.py，然后运行本程序。
 '''
 
 import rospy
