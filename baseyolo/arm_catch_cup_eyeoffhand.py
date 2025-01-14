@@ -17,8 +17,8 @@ target_position = None
 position_history = []
 
 # 手动偏置量
-x_offset = 70  # x轴方向偏置量
-y_offset = 160   # y轴方向偏置量
+x_offset = 60  # x轴方向偏置量
+y_offset = 180   # y轴方向偏置量
 z_offset = 100.0   # z轴方向偏置量
 
 # 目标位置回调函数

@@ -69,7 +69,7 @@ while not rospy.is_shutdown():
         img_filter = image_preprocessor(img_bgr)
         # 根据深度图生成画布
         depth_canvas = camera.depth_img2canvas(depth_img, 
-            min_distance=150, max_distance=300)
+            min_distance=100, max_distance=400)
         # 彩图+深度图生成点云
         scene_pcd = camera.get_pcd(img_bgr, depth_img)
 
@@ -143,6 +143,8 @@ while not rospy.is_shutdown():
                     mat_apart.append(tag_trans_mat[i][j])
             mat_apart_data.data = mat_apart
         pub_list.publish(mat_apart_data)
+
+        # print(T_cam2aruco_by3d_filter)
 
         # 按键退出
         key = cv2.waitKey(1)

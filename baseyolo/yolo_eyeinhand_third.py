@@ -27,16 +27,28 @@ model = YOLO('yolov8n.pt')  # 使用预训练模型
 print("[INFO] 完成YOLOv8模型加载")
 
 # 相机到机械臂末端的转换矩阵（由眼在手上标定得到）
-camera_to_end_matrix = np.array([
-    [-0.9941483257182423,  0.07728764143639524,  0.07547004010078937, 10.480185278750632],
-    [-0.07569650978593648, 6.366504532875844e-07, 0.9971309033451035, -265.8688209814729],
-    [0.07706584767485,    -0.9970088367114878,   0.0058510376313042605, 260.90494012959516],
-    [0.0, 0.0, 0.0, 1.0]
-])
+camera_to_end_matrix = np.array([[-0.9769009491021905, 0.1488913742200175, 0.15328370535094146, -7.005541914341826], 
+                                 [-0.19755886673025527, -0.9026958602452877, -0.38224426493052494, 65.07411248380654], 
+                                 [0.08145569237012701, -0.4036973403168453, 0.9112592537810569, 55.61473264653973], 
+                                 [0.0, 0.0, 0.0, 1.0]])
 
 # 初始化ROS节点和话题发布
 rospy.init_node('camera_publisher_335', anonymous=True)
 pub_pose = rospy.Publisher('tag_pose', String, queue_size=10)
+
+# 定义函数：计算物体在基座坐标系下的变换矩阵
+def tf_get_obj_to_base2(end2base, camera2end, obj2camera):
+    """
+    计算目标（物体）在基座坐标系下的齐次变换矩阵
+    @输入：
+        end2base: 末端到基座的变换矩阵 (4x4)
+        camera2end: 相机到末端的变换矩阵 (4x4)
+        obj2camera: 物体在相机坐标系下的齐次坐标
+    @输出：
+        obj2base: 物体在基座坐标系下的齐次坐标
+    """
+    obj2base = np.dot(np.dot(end2base, camera2end), obj2camera)
+    return obj2base
 
 # 创建显示窗口
 cv2.namedWindow('canvas', flags=cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO | cv2.WINDOW_GUI_EXPANDED)
@@ -91,12 +103,12 @@ while not rospy.is_shutdown():
                     continue
 
                 # 相机坐标系下的三维坐标
+                # cam_point3d = camera.depth_pixel2cam_point3d(cx, cy, depth_image=depth_img)
+                # cam_x, cam_y, cam_z = cam_point3d
+                # 相机坐标系下的三维坐标
                 cam_point3d = camera.depth_pixel2cam_point3d(cx, cy, depth_image=depth_img)
                 cam_x, cam_y, cam_z = cam_point3d
-
-                # 转换到机械臂末端坐标系
-                cam_point_homogeneous = np.array([cam_x, cam_y, cam_z, 1])  # 齐次坐标
-                end_point_homogeneous = np.dot(camera_to_end_matrix, cam_point_homogeneous)
+                obj2camera = np.array([cam_x, cam_y, cam_z, 1]).reshape(4, 1)
 
                 # 实时获取机械臂末端相对于基座的位姿
                 status, end_pose = robot.GetActualTCPPose(0)
@@ -122,9 +134,9 @@ while not rospy.is_shutdown():
                     T_end2base[:3, :3] = rotation_matrix  # 旋转矩阵
                     T_end2base[:3, 3] = translation  # 平移向量
 
-                    # 转换到机械臂基座坐标系
-                    base_point_homogeneous = np.dot(T_end2base, end_point_homogeneous)
-                    base_x, base_y, base_z = base_point_homogeneous[:3]
+                    # 计算物体在基座坐标系下的位置
+                    obj2base = tf_get_obj_to_base2(T_end2base, camera_to_end_matrix, obj2camera)
+                    base_x, base_y, base_z = obj2base[:3, 0]
 
                     # 显示相机和基座坐标
                     tag_camera = f"C:{cam_x:.0f},{cam_y:.0f},{cam_z:.0f}"

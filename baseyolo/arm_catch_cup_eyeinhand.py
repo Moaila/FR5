@@ -16,8 +16,8 @@ target_position = None
 position_history = [] 
 
 # 手动偏置量
-x_offset = 0  # x轴方向偏置量
-y_offset = 0  # y轴方向偏置量
+x_offset = -15  # x轴方向偏置量
+y_offset = 90  # y轴方向偏置量
 z_offset = 100.0  # z轴方向偏置量，控制抓取时的高度
 
 # 回调函数：接收目标位置
@@ -65,11 +65,11 @@ def robot_grab():
         return 
 
     robot.SetGripperConfig(4, 0, 0, 1)
-    time.sleep(2)
+    time.sleep(1.5)
     robot.ActGripper(1, 1)
-    time.sleep(2)
+    time.sleep(1.5)
     robot.MoveGripper(1, 100, 50, 30, 10000, 1)
-    time.sleep(4)
+    time.sleep(3)
     
     print("机械臂复位中...")
     home_position = [-90.0, -400.0, 100.0, 90.0, 0.0, 0.0]
@@ -110,24 +110,24 @@ def robot_grab():
                 print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
                 return
 
-            time.sleep(2)
+            # time.sleep(2)
             
-            input("按任意键继续...")
+            # input("按任意键继续...")
             
-            # 执行抓取动作
-            print("开始抓取...")
-            robot.MoveGripper(1, 0, 50, 60, 10000, 1)  # 关闭夹爪
-            time.sleep(3)
+            # # 执行抓取动作
+            # print("开始抓取...")
+            # robot.MoveGripper(1, 0, 50, 60, 10000, 1)  # 关闭夹爪
+            # time.sleep(3)
 
-            # 抬升到安全高度
-            lift_z = target_z + 50  # 抬升高度 50mm
-            ret = robot.MoveCart([target_x, target_y, lift_z, 90.0, 0.0, 0.0], 0, 0)
-            if ret != 0:
-                error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
-                print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
-                return
+            # # 抬升到安全高度
+            # lift_z = target_z + 50  # 抬升高度 50mm
+            # ret = robot.MoveCart([target_x, target_y, lift_z, 90.0, 0.0, 0.0], 0, 0)
+            # if ret != 0:
+            #     error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
+            #     print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
+            #     return
 
-            print("抓取完成并抬升！")
+            print("ok!")
             break  # 抓取完成后退出循环
 
     except KeyboardInterrupt:

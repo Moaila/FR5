@@ -37,7 +37,7 @@ def save_to_file(matrix):
     保存变换矩阵到文件
     '''
     log_dir = "/home/newplace/FR5/demo_ws/src/frcobot_ros/fr5_moveit_config/log"
-    file_name = "1.9_new_眼在手上标定结果.txt"
+    file_name = "1.114_new_眼在手上标定结果.txt"
     
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
