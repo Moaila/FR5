@@ -15,11 +15,16 @@ target_position = None
 # 用于保存最后一次接收到的位置
 position_history = [] 
 
-# 手动偏置量
+# 相机基本偏置量
 x_offset = -15  # x轴方向偏置量
 y_offset = 125  # y轴方向偏置量
 z_offset = 285.0  # z轴方向偏置量，控制抓取时的高度
 
+# 各个按钮位置偏置,x,y,z
+button_offsets = {
+    1:('button',(0,0,0)),
+    2:('Cappuccino', (-65,-35,60)),
+}
 # 回调函数：接收目标位置
 def target_position_callback(msg):
     global target_position, position_history
@@ -74,22 +79,34 @@ def robot_grab():
     print("机械臂复位中...")
     home_position = [-90.0, -400.0, 285.0, 90.0, 0.0, 0.0]
     robot.MoveCart(home_position, 0, 0)
-    input("按任意键继续...")
 
     try:
         while not rospy.is_shutdown():
+            print("请选择您想要点击的按钮：")
+            for key, value in button_offsets.items():
+                print(f"{key}: {value[0]}")
+            button_choice = int(input("请输入按钮编号："))
+
+            if button_choice not in button_offsets:
+                print("无效的选择，请重试。")
+                continue
+
+            # 获取选择的按钮的偏置量
+            selected_button_name, button_offset = button_offsets[button_choice]
+            print(f"您选择了按钮：{selected_button_name}")
+
             # 判断是否有有效的目标位置
             if target_position:
                 # 计算最终目标位置（接收到的位置 + 手动偏置量）
-                target_x = target_position[0] + x_offset
-                target_y = target_position[1] + y_offset
-                target_z = z_offset
+                target_x = target_position[0] + x_offset + button_offset[0]
+                target_y = target_position[1] + y_offset + button_offset[1]
+                target_z = z_offset +button_offset[2]
             elif position_history:
                 # 如果没有新位置，使用最后保存的有效位置
                 last_position = position_history[-1]
-                target_x = last_position[0] + x_offset
-                target_y = last_position[1] + y_offset
-                target_z = z_offset
+                target_x = last_position[0] + x_offset + button_offset[0]
+                target_y = last_position[1] + y_offset + button_offset[1]
+                target_z = z_offset + button_offset[2]
                 print("目标丢失，使用最后保存的位置！")
             else:
                 # 如果没有历史记录，等待目标出现
@@ -103,37 +120,23 @@ def robot_grab():
 
             input("按任意键继续...")
 
-            # 移动到抓取位置
+            # 移动到点击位置
             ret = robot.MoveCart([target_x, target_y, target_z, 90.0, 0.0, 0.0], 0, 0)
             if ret != 0:
                 error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
                 print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
                 return
 
-            # time.sleep(2)
-            
-            # input("按任意键继续...")
-            
-            # # 执行抓取动作
-            # print("开始抓取...")
-            # robot.MoveGripper(1, 0, 50, 60, 10000, 1)  # 关闭夹爪
-            # time.sleep(3)
-
-            # # 抬升到安全高度
-            # lift_z = target_z + 50  # 抬升高度 50mm
-            # ret = robot.MoveCart([target_x, target_y, lift_z, 90.0, 0.0, 0.0], 0, 0)
-            # if ret != 0:
-            #     error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
-            #     print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
-            #     return
-
             print("ok!")
-            break  # 抓取完成后退出循环
+            break  # 点击完成后退出循环
 
     except KeyboardInterrupt:
-        print("抓取任务中断。")
+        print("点击任务中断。")
 
     finally:
+        # 先复位
+        home_position = [-90.0, -400.0, 285.0, 90.0, 0.0, 0.0]
+        robot.MoveCart(home_position, 0, 0)
         # 停止伺服模式
         robot.ServoMoveEnd()
         print("伺服模式已停止。")

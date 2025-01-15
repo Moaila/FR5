@@ -1,6 +1,7 @@
 '''
 @author: 李文皓
-Gemini335 3D相机 - 测试彩图读取与动态更新与保存
+Gemini335 3D相机 
+@功能：全手动拍摄图片用于yolo训练
 '''
 import numpy as np
 import cv2 
@@ -29,6 +30,7 @@ train_ratio = 0.8
 # 创建窗口
 win_flag = cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO | cv2.WINDOW_GUI_EXPANDED
 cv2.namedWindow("color", flags=win_flag)
+
 
 save_count = 0
 

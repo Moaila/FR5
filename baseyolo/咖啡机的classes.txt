@@ -5,5 +5,5 @@ names:
   3: Espresso
   4: Long coffee
   5: Hot water
-  6: Cappuccino
+  6: Cappuccino -65,-30,60
   7: button
