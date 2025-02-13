@@ -2,6 +2,7 @@
 @author: 李文皓
 @场景：眼在手上
 @操作说明：使用时先启动roscore, 然后运行yolov8_coffee_third.py，再运行本程序
+@闭环控制，反复点击
 """
 import numpy as np
 import rospy
@@ -120,6 +121,14 @@ def robot_grab():
                 error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
                 print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
                 return
+            time.sleep(1)
+            ret = robot.MoveCart(home_position, 0, 0)
+            if ret != 0:
+                error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
+                print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
+                return
+            time.sleep(1)
+
 
             print("点击完成，等待检测红色按钮信号...")
             time.sleep(2)  # 等待信号更新
@@ -136,6 +145,7 @@ def robot_grab():
 
     finally:
         robot.MoveCart(home_position, 0, 0)
+        robot.MoveGripper(1, 100, 50, 30, 10000, 1)
         robot.ServoMoveEnd()
         print("伺服模式已停止。")
 
