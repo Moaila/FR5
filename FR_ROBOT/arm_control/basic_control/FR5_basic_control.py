@@ -1,3 +1,7 @@
+"""
+@author: liwenhao
+@功能：集成各种运动模式便于调用
+"""
 from fairino import Robot
 
 

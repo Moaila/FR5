@@ -1,10 +1,6 @@
 '''
 ArucoTag检测+位姿估计(3D相机版)
-----------------------------
-作者: 阿凯爱玩机器人 | 微信: xingshunkai  | QQ: 244561792
-B站: https://space.bilibili.com/40344504
-淘宝店铺: https://shop140985627.taobao.com
-购买链接: https://item.taobao.com/item.htm?id=677075846402
+
 '''
 import time
 import json

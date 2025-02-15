@@ -17,7 +17,7 @@ target_position = None
 position_history = []
 
 # 手动偏置量
-x_offset = 60  # x轴方向偏置量
+x_offset = 55  # x轴方向偏置量
 y_offset = 180   # y轴方向偏置量
 z_offset = 100.0   # z轴方向偏置量
 
@@ -73,7 +73,7 @@ def robot_grab():
     time.sleep(4)
     
     print("机械臂复位中...")
-    desc_pos = [-90.0, -400.0, 100.0, 90.0, 0.0, 0.0]
+    desc_pos = [-90.0, -400.0, 300.0, 90.0, 0.0, 0.0]
     robot.MoveCart(desc_pos, 0, 0)
     input("按任意键...")
 

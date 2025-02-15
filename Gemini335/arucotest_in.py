@@ -1,3 +1,7 @@
+"""
+@作者： 李文皓
+@功能： 利用arucotag码测试眼在手上标定准度
+"""
 import time
 import json
 import numpy as np
