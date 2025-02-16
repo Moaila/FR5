@@ -37,5 +37,28 @@ else:
     print(f"检测到 {device_num} 个设备")
 
 # 获取设备序列号
-serial_num = device_list.get_device_serial_number_by_index(0)
-print(f"设备序列号为: {serial_num}")
+serial_num1 = device_list.get_device_serial_number_by_index(0)
+serial_num2 = device_list.get_device_serial_number_by_index(1)
+
+print(f"第1个设备序列号为: {serial_num1}")
+print(f"第2个设备序列号为: {serial_num2}")
+
+# 获取第一个设备, 并打开设备
+device1 = device_list.get_device_by_index(0)
+
+# 获取第二个设备, 并打开设备
+device2 = device_list.get_device_by_index(1)
+
+# 获取设备信息
+device1_info = device1.get_device_info()
+device2_info = device2.get_device_info()
+# 可以直接将设备信息打印出来
+# print(device1_info)
+# print(device2_info)
+
+# 获取设备UID
+device1_UID = device1_info.get_uid()
+print(f"设备UID: {device1_UID}")
+# 获取设备UID
+device2_UID = device2_info.get_uid()
+print(f"设备UID: {device2_UID}")
