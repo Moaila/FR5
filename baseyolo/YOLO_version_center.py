@@ -1,6 +1,6 @@
 """
 @author: 李文皓
-@function: 整个做咖啡流程中的所有视觉信号获取,请注意，这时的数据未加上偏置，需要在机械臂端专门加入偏置来进行调整
+@function: 整个做咖啡流程中的所有视觉信号获取,请注意，这时的数据未加上偏置，需要专门加入偏置来进行调整
 """
 import os
 import time
@@ -38,7 +38,7 @@ class CoffeeVisionSystem:
         self.init_cameras()
         self.current_camera = self.camera1  # 默认使用第一个相机
         self.current_mode = 'eye_to_hand'  # 初始模式为眼在手外
-        
+        self.red_button_detected = False  # 初始化红色按钮检测状态
         # 机械臂初始化
         self.robot = Robot.RPC('192.168.59.6')
         
@@ -52,14 +52,14 @@ class CoffeeVisionSystem:
                 iou=0.6
             ),
             'button': self.init_model(
-                "/home/newplace/FR5/coffeeyolo/runs/detect/train/weights/best.pt",
+                "/home/newplace/FR5/coffeeyolo/runs/detect/train2/weights/best.pt",
                 target_class=15,
                 image_size=1088,
                 confidence=0.5,
                 iou=0.6
             ),
             'red_button': self.init_model(
-                "/home/newplace/FR5/redbuttonyolo/runs/detect/train/weights/best.pt",
+                "/home/newplace/FR5/redbuttonyolo/runs/detect/train2/weights/best.pt",
                 target_class=15,
                 image_size=1088,
                 confidence=0.5,
@@ -106,73 +106,6 @@ class CoffeeVisionSystem:
         # 获取设备序列号
         serial_num1 = device_list.get_device_serial_number_by_index(0)
         serial_num2 = device_list.get_device_serial_number_by_index(1)
-        """
-# @author: 李文皓
-# @function: 测试YOLO_version.py代码的正确性
-# """
-# #!/usr/bin/env python
-# import rospy
-# from std_msgs.msg import Int32, String
-
-# def cup_pose_callback(msg):
-#     """杯子坐标回调函数"""
-#     print(f"接收到杯子坐标: {msg.data}")
-
-# def button_pose_callback(msg):
-#     """按钮坐标回调函数"""
-#     print(f"接收到按钮坐标: {msg.data}")
-
-# def stage_controller():
-#     # 初始化ROS节点
-#     rospy.init_node('stage_controller', anonymous=True)
-    
-#     # 创建发布器
-#     pub = rospy.Publisher('/arm/stage_status', Int32, queue_size=10)
-    
-#     # 创建订阅器
-#     rospy.Subscriber('/vision/cup_pose', String, cup_pose_callback)
-#     rospy.Subscriber('/vision/button_pose', String, button_pose_callback)
-    
-#     # 初始阶段状态
-#     stage_status = 0
-#     pub.publish(stage_status)
-    
-#     print("阶段控制器已启动")
-#     print("当前阶段: 0 (眼在手外)")
-#     print("按 '1' 切换到阶段1 (眼在手上)")
-#     print("按 'q' 退出程序")
-
-#     try:
-#         while not rospy.is_shutdown():
-#             # 获取用户输入
-#             key = input()
-            
-#             if key == '1':
-#                 if stage_status == 0:
-#                     stage_status = 1
-#                     pub.publish(stage_status)
-#                     print("\n切换到阶段1 (眼在手上)")
-#                     print("正在发送信号: 1")
-#                 else:
-#                     print("\n已经是阶段1，无需切换")
-                    
-#             elif key == 'q':
-#                 print("\n退出程序")
-#                 break
-                
-#             else:
-#                 print(f"\n无效输入: {key}")
-#                 print("请输入 '1' 或 'q'")
-
-#     except KeyboardInterrupt:
-#         print("\n程序被中断")
-
-# if __name__ == '__main__':
-#     try:
-#         stage_controller()
-#     except rospy.ROSInterruptException:
-#         pass
-        # 创建相机实例
         self.camera1 = Gemini335(serial_num=serial_num1)
         self.camera2 = Gemini335(serial_num=serial_num2)
         
@@ -269,6 +202,7 @@ class CoffeeVisionSystem:
         canvas, class_ids, xyxy_list, conf_list = btn_result
         
         # 红色按钮检测
+        self.red_button_detected = False  # 每次检测前重置状态
         red_result = self.models['red_button'].detect(img)
         if isinstance(red_result, tuple):
             _, red_class_ids, _, _ = red_result

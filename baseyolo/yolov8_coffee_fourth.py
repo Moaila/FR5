@@ -21,7 +21,7 @@ robot = Robot.RPC('192.168.59.6')
 
 # 加载模型（按钮检测）
 print("[INFO] 开始加载 YOLOv8 模型")
-model_path = "/home/newplace/FR5/coffeeyolo/runs/detect/train/weights/best.pt"
+model_path = "/home/newplace/FR5/coffeeyolo/runs/detect/train2/weights/best.pt"
 model = YoloV8Detect(model_path)
 
 # 配置模型参数
@@ -32,7 +32,7 @@ print("[INFO] 完成 YOLOv8 模型加载")
 
 # 加载红色按钮检测模型
 print("[INFO] 开始加载红色按钮 YOLOv8 模型")
-red_button_model_path = "/home/newplace/FR5/redbuttonyolo/runs/detect/train/weights/best.pt"
+red_button_model_path = "/home/newplace/FR5/redbuttonyolo/runs/detect/train2/weights/best.pt"
 red_button_model = YoloV8Detect(red_button_model_path)
 
 # 配置红色按钮检测模型参数

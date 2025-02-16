@@ -25,7 +25,7 @@ os.makedirs(image_val_dir, exist_ok=True)
 train_ratio = 0.8
 
 # 初始位置
-home_position = [-90.0, -400.0, 280.0, 90.0, 0.0, 0.0] # 初始笛卡尔位置 (x, y, z, rx, ry, rz)
+home_position = [-80.134, -530.716, 297.034, 92.609, 1.282, 3.578] # 初始笛卡尔位置 (x, y, z, rx, ry, rz)
 
 # 运动范围
 motion_range = {
@@ -43,7 +43,7 @@ def move_to_pose(robot, target_position):
         print(f"机械臂运动失败，错误码: {ret}")
         raise RuntimeError(f"机械臂运动失败，错误码: {ret}")
     print(f"机械臂已移动到目标位姿: {target_position}")
-    time.sleep(0.5)
+    time.sleep(1.5)
 
 # 拍摄并保存图片
 def capture_and_save_image(camera, save_count):

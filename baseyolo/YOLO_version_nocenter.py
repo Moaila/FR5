@@ -54,14 +54,14 @@ class CoffeeVisionSystem:
                 iou=0.6
             ),
             'button': self.init_model(
-                "/home/newplace/FR5/coffeeyolo/runs/detect/train/weights/best.pt",
+                "/home/newplace/FR5/coffeeyolo/runs/detect/train2/weights/best.pt",
                 target_class=15,
                 image_size=1088,
                 confidence=0.5,
                 iou=0.6
             ),
             'red_button': self.init_model(
-                "/home/newplace/FR5/redbuttonyolo/runs/detect/train/weights/best.pt",
+                "/home/newplace/FR5/redbuttonyolo/runs/detect/train2/weights/best.pt",
                 target_class=15,
                 image_size=1088,
                 confidence=0.5,

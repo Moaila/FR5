@@ -15,7 +15,7 @@ camera = Gemini335()
 
 # 加载模型
 print("[INFO] 开始加载 YOLOv8 模型")
-model_path = "/home/newplace/FR5/redbuttonyolo/runs/detect/train/weights/best.pt"
+model_path = "/home/newplace/FR5/redbuttonyolo/runs/detect/train2/weights/best.pt"
 model = YoloV8Detect(model_path)
 
 # 配置模型参数
