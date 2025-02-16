@@ -109,13 +109,13 @@ def RL_Move(stage,target,robot):
         return
     print("J1:",J1)
     # 加载模型
-    model1 = PPO.load("/home/newplace/FR5/RL_weights_hyh/model1_pick.zip")
+    model1 = PPO.load("/home/newplace/FR5/RL_weights_hyh/model1_pick_2.zip")
     model2 = PPO.load("/home/newplace/FR5/RL_weights_hyh/model2_place.zip")
     model3 = PPO.load("/home/newplace/FR5/RL_weights_hyh/model3_button.zip")
     model4 = PPO.load("/home/newplace/FR5/RL_weights_hyh/model4_grasp.zip")
     model5 = PPO.load("/home/newplace/FR5/RL_weights_hyh/model5_send.zip")
-    model = [model1,model2,model3,model3,model4,model4,model5]
-    gripper_state = [90,100,0,0,100,90,100]
+    model = [model1,model1, model2,model3,model3,model4,model4,model5]
+
     best_dis = 100
     print("当前步骤为：",stage+1)
     print("杯子位置为：",target)
@@ -141,9 +141,9 @@ def RL_Move(stage,target,robot):
         action = action[0:6]
 
         # 将动作应用于机械臂
-        step_arrays = action/10
+        step_arrays = action/5
         J1 = np.array(J1)
-        for a in range(10):
+        for a in range(5):
             J1 = J1 + step_arrays
             J = J1.tolist()# 
             robot.ServoJ(J, acc, vel, t, lookahead_time, P)
@@ -160,10 +160,6 @@ def RL_Move(stage,target,robot):
             if distance > best_dis or distance < 0.01:
                 print("到达目标位置，开始夹取")
                 # 关闭夹爪
-                time.sleep(0.5)
-                robot.MoveGripper(1, gripper_state[stage]
-                            , 50, 10, 10000, 1)
-                time.sleep(0.5)
                 Reply = input("按enter复位")
                 break
         if pos[2] < 0.07:
@@ -289,11 +285,18 @@ def robot_grab():
             input("按任意键...")
 
             # time.sleep(2)
-
+            gripper_state = [100,90,100,0,0,100,90,100]
             # 向下移动到抓取位置
-            
-            RL_Move(0,[-target_x/1000,-target_y/1000,target_z/1000],robot)
-
+            #预夹取
+            RL_Move(0,[-target_x/1000,-target_y/1000-0.04,target_z/1000+0.02],robot)
+            time.sleep(0.5)
+            robot.MoveGripper(1, gripper_state[0]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
+            RL_Move(1,[-target_x/1000,-target_y/1000,target_z/1000],robot)
+            robot.MoveGripper(1, gripper_state[1]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
             pub_stage_status.publish(1)  # 发送信号 1，表示第一阶段完成
             print("已发送相机切换信号，等待相机切换完成...")
             time.sleep(1)  # 等待相机切换完成
@@ -313,9 +316,13 @@ def robot_grab():
             position7 = [cup_position[0],cup_position[1] - 0.1,cup_position[2]] #杯子预计放置位置
             position = [position1,position2,position3,position4,position5,position6,position7]
             #步骤2把杯子放到咖啡机上
-            RL_Move(1,position[1],robot)
+            #预夹取
+            RL_Move(2,position[1],robot)
+            robot.MoveGripper(1, gripper_state[2]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
             #步骤3将机械臂移动到观察按钮的位置
-            RL_Move(2,position[2],robot)
+            RL_Move(3,position[2],robot)
             #步骤4点击按钮
             while button_position is None:
                 print("等待按钮坐标...")
@@ -332,11 +339,25 @@ def robot_grab():
             target_pos = get_button_position(button_position, button_choice)
             print(f"计算后的目标位置：X={target_pos[0]:.3f}m, Y={target_pos[1]:.3f}m, Z={target_pos[2]:.3f}m")
             input("按任意键...")
-
-            RL_Move(3,position[3],robot)
-            RL_Move(4,position[4],robot)
-            RL_Move(5,position[5],robot)
-            RL_Move(6,position[6],robot)
+            robot.MoveGripper(1, gripper_state[3]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
+            RL_Move(4,position[3],robot)
+            robot.MoveGripper(1, gripper_state[4]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
+            RL_Move(5,position[4],robot)
+            robot.MoveGripper(1, gripper_state[5]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
+            RL_Move(6,position[5],robot)
+            robot.MoveGripper(1, gripper_state[6]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)           
+            RL_Move(7,position[6],robot)
+            robot.MoveGripper(1, gripper_state[7]
+                            , 50, 10, 10000, 1)
+            time.sleep(0.5)
                 
             
         else:

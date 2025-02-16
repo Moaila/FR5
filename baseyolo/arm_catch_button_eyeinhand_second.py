@@ -82,6 +82,9 @@ def robot_grab():
     home_position = [-90.0, -400.0, 285.0, 90.0, 0.0, 0.0]
     robot.MoveCart(home_position, 0, 0)
 
+    max_retries = 5 # 最大重试次数
+    retry_count = 0 # 当前重试次数
+
     try:
         print("请选择您想要点击的按钮：")
         for key, value in button_offsets.items():
@@ -95,7 +98,7 @@ def robot_grab():
         selected_button_name, button_offset = button_offsets[button_choice]
         print(f"您选择了按钮：{selected_button_name}")
 
-        while not rospy.is_shutdown():
+        while not rospy.is_shutdown() and retry_count < max_retries:
             # 判断是否有有效的目标位置
             if target_position:
                 target_x = target_position[0] + x_offset + button_offset[0]
@@ -138,7 +141,10 @@ def robot_grab():
                 break
             else:
                 print("未检测到红色按钮，重新点击目标...")
+                retry_count += 1
                 time.sleep(1)  # 等待再次点击前的短暂延迟
+        if retry_count >= max_retries:
+            print("已达到最大重试次数，请检查咖啡机是否故障")
 
     except KeyboardInterrupt:
         print("任务中断。")
