@@ -72,7 +72,7 @@ def red_button_callback(msg):
     """红色标志回调函数u"""
     global ifredbutton
     ifredbutton = int(msg.data)
-    rospy.loginfo("Received red button status: %s", ifredbutton)
+    # rospy.loginfo("Received red button status: %s", ifredbutton)
 
 # 第一阶段：利用眼在手外获取到杯子位置然后进行抓取然后到达指定位置
 def robot_grab():
@@ -137,6 +137,11 @@ def robot_grab():
             # time.sleep(2)
 
             # 向下移动到抓取位置
+            ret = robot.MoveCart([target_x1, target_y1+100, target_z1, 90.0, 0.0, 0.0], 0, 0)
+            if ret != 0:
+                error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
+                print(f"伺服运动失败，错误码：{ret}，错误描述：{error_description}，处理建议：{solution}")
+                return
             ret = robot.MoveCart([target_x1, target_y1, target_z1, 90.0, 0.0, 0.0], 0, 0)
             if ret != 0:
                 error_description, solution = error_codes.get(ret, ("未知错误", "请查看日志"))
@@ -197,13 +202,13 @@ def robot_put():
                 # 计算最终目标位置（接收到的位置 + 手动偏置量）
                 button_x1 = button_position[0] + x2_offset
                 button_y1 = button_position[1] + y2_offset - 50
-                button_z1 = 120
+                button_z1 = 140
             elif position_history:
                 # 如果没有新位置，使用最后保存的有效位置
                 last_position = position_history[-1]
                 button_x1 = last_position[0] + x2_offset
                 button_y1 = last_position[1] + y2_offset - 50
-                button_z1 = 120
+                button_z1 = 140
                 print("目标丢失，使用最后保存的位置！")
             else:
                 # 如果没有历史记录，等待目标出现
@@ -273,7 +278,7 @@ def robot_touch():
 
     button_offsets = {
         1:('button',(0,0,0)),
-        2:('Cappuccino', (-65,-35,60)),
+        2:('Cappuccino', (-65,-35,55)),
     }
 
     ret = robot.ServoMoveStart()
@@ -361,19 +366,22 @@ def robot_takeout():
     global cup_position
     target_x = cup_position[0]
     target_y = cup_position[1]
-    target_z = cup_position[2]
+    target_z = cup_position[2]-10
     first_position = [-90.0, -400.0, target_z, 90.0, 0.0, 0.0]
     second_position = [target_x, target_y, target_z, 90.0, 0.0, 0.0]
-    last_position = [target_x, target_y-40, target_z, 90.0, 0.0, 0.0]
-    end_position = [target_x, target_y-40, target_z-10, 90.0, 0.0, 0.0]
+    last_position = [target_x, target_y+200, target_z, 90.0, 0.0, 0.0]
+    end_position = [target_x, target_y+200, target_z-30, 90.0, 0.0, 0.0]
     robot.MoveCart(first_position, 0, 0)
     robot.MoveCart(second_position,0,0)
+    time.sleep(1.5)
     robot.MoveGripper(1, 90, 50, 90, 10000, 1)
     time.sleep(1.5)
     robot.MoveCart(last_position,0,0)
     robot.MoveCart(end_position,0,0)
     robot.MoveGripper(1, 100, 50, 90, 10000, 1)
     time.sleep(1.5)
+    home_position = [-90.0, -400.0, 285.0, 90.0, 0.0, 0.0]
+    robot.MoveCart(home_position,0,0)
 
 
     
@@ -383,6 +391,7 @@ def robot_takeout():
 if __name__ == "__main__":
     # 初始化 ROS 节点
     rospy.init_node("robot_grab_node", anonymous=True)
+    
     # 订阅目标位置话题
     rospy.Subscriber("/vision/cup_pose", String, target_position_callback)
     rospy.Subscriber('/vision/button_pose', String, button_position_callback)
@@ -398,7 +407,9 @@ if __name__ == "__main__":
     input("按任意键...")
     robot_put()
     input("按任意键...")
-    robot_touch
+    robot_touch()
+    print("请等待咖啡制作完成")
+    time.sleep(35)
     input("按任意键...")
     robot_takeout()
     print("请享用咖啡")
