@@ -12,6 +12,8 @@ from fairino import Robot
 import time
 from stable_baselines3 import PPO
 from scipy.spatial.transform import Rotation as R # 用于旋转矩阵的转换
+import sys
+import select
 
 # 全局变量，用于存储从 ROS 话题接收到的目标位置
 target_position = None
@@ -30,7 +32,7 @@ cup_position = None
 # 手动偏置量
 x_offset = 55  # x轴方向偏置量
 y_offset = 40   # y轴方向偏置量
-z_offset = 80   # z轴方向偏置量
+z_offset = 76   # z轴方向偏置量
 button_offsets = {
     1:('button',(0,0,0)),
     2:('Cappuccino', (-65,-35,60)),
@@ -38,7 +40,7 @@ button_offsets = {
 # 眼在手上相机基本偏置量
 x1_offset = -15  # x轴方向偏置量
 y1_offset = 125  # y轴方向偏置量
-z1_offset = 285.0  # z轴方向偏置量，控制抓取时的高度
+z1_offset = 285.0  
 
 # 错误码映射表
 error_codes = {
@@ -103,7 +105,8 @@ def button_positon_get():
     # 偏置表需要专门测量调整，但是可以选择相信视觉不做调整
     button_offsets = {
         1:('button',(0,0,0)),
-        2:('Cappuccino', (-65,-35,55)),
+        2:('Cappuccino', (-60,-432,45)),
+        3:('Espress',(60,-432,45)),
     }
 
     try:
@@ -119,26 +122,27 @@ def button_positon_get():
 
         selected_button_name, button_offset = button_offsets[button_choice]
         print(f"您选择了按钮：{selected_button_name}")
-        while not rospy.is_shutdown():
-            # 判断是否有有效的目标位置
-            if button_position:
-                target_x = button_position[0] + x3_offset + button_offset[0]
-                target_y = button_position[1] + y3_offset + button_offset[1]
-                target_z = z3_offset + button_offset[2]
-            elif position_history:
-                last_position = position_history[-1]
-                target_x = last_position[0] + x3_offset + button_offset[0]
-                target_y = last_position[1] + y3_offset + button_offset[1]
-                target_z = z3_offset + button_offset[2]
-                print("目标丢失，使用最后保存的位置！")
-            else:
-                print("等待目标位置...")
-                time.sleep(0.1)
-                continue
+        # 判断是否有有效的目标位置
+        print("接收到的按钮坐标为：",button_position)
 
-            print(f"最终目标位置: x={target_x}, y={target_y}, z={target_z}")
+        if button_position:
+            target_x = button_position[0] + x3_offset + button_offset[0]
+            target_y = button_position[1] + y3_offset + button_offset[1]
+            target_z = z3_offset + button_offset[2]
+        elif position_history:
+            last_position = position_history[-1]
+            target_x = last_position[0] + x3_offset + button_offset[0]
+            target_y = last_position[1] + y3_offset + button_offset[1]
+            target_z = z3_offset + button_offset[2]
+            print("目标丢失，使用最后保存的位置！")
+        else:
+            print("等待目标位置...")
+            time.sleep(0.1)
 
-            drink_position = [target_x, target_y, target_z]
+        print(f"最终目标位置: x={target_x}, y={target_y}, z={target_z}")
+        input("按任意键...")
+
+        drink_position = [target_x, target_y, target_z]
             
     except KeyboardInterrupt:
         print("任务中断。")
@@ -154,22 +158,16 @@ def get_obs(J1,target_position,robot,angle_noise = [0,0,0,0,0,0],pose_noise = [0
         robot_pose = robot.GetActualTCPPose(0)
         print("robot_error",robot_pose)
         time.sleep(0.5)
-    print("robot_pose",robot_pose)
     robot_pose = [robot_pose[1][i] for i in range(6)]
     # robot_pose = robot.GetForwardKin(joint)[1:7]
     # joint[5] = joint[5]-90
-    print("robot_pose:"+str(robot_pose))
     rotation = R.from_euler('xyz',[robot_pose[3],robot_pose[4],robot_pose[5]],degrees=True)
-    relative_position = np.array([0,0,0.12])
+    relative_position = np.array([0,0,0.13])
     rotation_relative_position = rotation.apply(relative_position)
     gripper_centre_pos = [robot_pose[0]/1000,robot_pose[1]/1000,robot_pose[2]/1000] + rotation_relative_position
     gripper_centre_pos[0:2] = -gripper_centre_pos[0:2]
-    print("gripper_centre_pos:"+str(gripper_centre_pos)) # 机械臂末端中心位置
-    
-    
     obs_joint_angles = ((np.array([joint[0],joint[1],joint[2],joint[3],joint[4],joint[5]],dtype=np.float32)/180)+1)/2
     obs_gripper_orientation = (np.array([-robot_pose[3],-robot_pose[4],robot_pose[5]],dtype=np.float32)+180)/360
-    print("obs_gripper_orientation:"+str(obs_gripper_orientation))
     obs_gripper_centre_pos = np.array([(gripper_centre_pos[0]+0.5)/1,
                                         (gripper_centre_pos[1]+0.5)/2,
                                         (gripper_centre_pos[2]+0.5)/1],dtype=np.float32)
@@ -177,7 +175,6 @@ def get_obs(J1,target_position,robot,angle_noise = [0,0,0,0,0,0],pose_noise = [0
                                     target_position[1]/1,
                                     target_position[2]/0.5],dtype=np.float32)
     obs = np.hstack((obs_gripper_centre_pos,obs_joint_angles,obs_gripper_orientation,obs_target_position),dtype=np.float32).flatten().reshape(1,15)# obs_gripper_orientation,
-    print("obs:"+str(obs))
     return obs,gripper_centre_pos
 
 #强化学习控制机械臂运动
@@ -211,13 +208,20 @@ def RL_Move(stage,target,robot):
     pose_noise = 0
     for i in range(100):
         # 从机械臂获取当前状态
+        # 检测是否有按键输入
+        rlist, _, _ = select.select([sys.stdin], [], [], 0.1)
+        if rlist:
+            key = sys.stdin.readline().strip()
+            if key == 'q':
+                print("检测到按键输入 'q'，程序退出。")
+                break
         # J1=robot.GetActualJointPosDegree()[1]
         obs,pos = get_obs(J1,target,robot=robot)
         # print("pos:",pos)
 
         # 使用模型预测动作
         action, _states = model[stage].predict(obs, deterministic=True)
-        print("action:"+str(action))
+        # print("action:"+str(action))
         action = action[0:6]
 
         # 将动作应用于机械臂
@@ -228,12 +232,12 @@ def RL_Move(stage,target,robot):
             J = J1.tolist()# 
             robot.ServoJ(J, acc, vel, t, lookahead_time, P)
             # time.sleep(0.002)
-        print("成功执行第"+str(i)+"步")
         # time.sleep(0.5)
 
         distance = math.sqrt((target[0]-pos[0])**2+(target[1]-pos[1])**2+(target[2]-pos[2])**2)
         print("distance:",distance)
-        if distance <= 0.015:
+        print("pos",pos)
+        if distance <= 0.02:
             if distance < best_dis:
                 best_dis = distance
         if best_dis < 1:
@@ -242,9 +246,16 @@ def RL_Move(stage,target,robot):
                 # 关闭夹爪
                 Reply = input("按enter复位")
                 break
-        if pos[2] < 0.07:
-            print("到达下限位")
-            exit(-1)
+        if pos[2] < 0.05:
+            if stage == 3:
+                if pos[2] < 0.04:
+                    print("到达下限位")
+                    exit(-1)
+                else:
+                    continue
+            else:
+                print("到达下限位")
+                exit(-1)
             time.sleep(10000)
             break
 
@@ -263,11 +274,11 @@ def robot_grab():
 
     #夹爪初始化
     robot.SetGripperConfig(4, 0, 0, 1)
-    time.sleep(0.5)
+    time.sleep(2)
     robot.ActGripper(1, 1)
-    time.sleep(0.5)
+    time.sleep(2)
     robot.MoveGripper(1, 100, 50, 1, 10000, 1)
-    time.sleep(0.5)
+    time.sleep(3)
     print("----------")
 
     # 初始化机械臂
@@ -309,7 +320,7 @@ def robot_grab():
             input("按任意键...")
 
             # time.sleep(2)
-            gripper_state = [100,90,100,0,0,100,90,100]
+            gripper_state = [100,85,100,0,0,100,85,100]
             # 向下移动到抓取位置
             #预夹取
             RL_Move(0,[-target_x/1000,-target_y/1000-0.04,target_z/1000+0.02],robot)
@@ -326,18 +337,18 @@ def robot_grab():
             time.sleep(1)  # 等待相机切换完成
             print("ok")
             cup_position = [0.3,0.484,0.08]
-            coffee_position = [0.07,0.75,0.12]
+            coffee_position = [0.1,0.76,0.12]
             catcher_pos = [0.0,0.0,0.0]
             button_height = 0.28
             obstacle_wide = 0.04
             button_length = 0.01
             position1 = [cup_position[0],cup_position[1],cup_position[2]] #杯子初始位置
-            position2 = [coffee_position[0],coffee_position[1],coffee_position[2]] #咖啡机位置
-            position3 = [coffee_position[0],coffee_position[1]-0.1,0.33] #咖啡机按钮预置位置
+            position2 = [coffee_position[0]+0.02,coffee_position[1],coffee_position[2]] #咖啡机位置
+            position3 = [coffee_position[0],coffee_position[1]-0.1,0.30] #咖啡机按钮预置位置
             position4 = [coffee_position[0]+0.047,coffee_position[1]+0.005,0.30] #咖啡机按钮位置
             position5 = [coffee_position[0],coffee_position[1]-0.15,coffee_position[2] + 0.08] #夹杯子预置位置
-            position6 = [coffee_position[0],coffee_position[1]+0.01,coffee_position[2]] #咖啡机位置
-            position7 = [cup_position[0],cup_position[1] - 0.1,cup_position[2]] #杯子预计放置位置
+            position6 = [coffee_position[0],coffee_position[1]+0.015,coffee_position[2]] #咖啡机位置
+            position7 = [cup_position[0],cup_position[1],cup_position[2]] #杯子预计放置位置
             position = [position1,position2,position3,position4,position5,position6,position7]
             #步骤2把杯子放到咖啡机上
             #预夹取
@@ -351,25 +362,29 @@ def robot_grab():
             
             # 选择按钮并将选择的按钮存放在 drink_position里面
             button_positon_get()
-            
-            RL_Move(4,position[3],robot)
-            robot.MoveGripper(1, gripper_state[4]
+            robot.MoveGripper(1, gripper_state[3]
                             , 50, 10, 10000, 1)
-            time.sleep(0.5)
+            time.sleep(0.5)  
+
+            RL_Move(4,[-drink_position[0]/1000,-drink_position[1]/1000,drink_position[2]/1000],robot)
+
+
+            # 步骤5将夹爪移动到等待位置
             RL_Move(5,position[4],robot)
             robot.MoveGripper(1, gripper_state[5]
                             , 50, 10, 10000, 1)
             time.sleep(0.5)
+            # 步骤6夹杯子
             RL_Move(6,position[5],robot)
             robot.MoveGripper(1, gripper_state[6]
                             , 50, 10, 10000, 1)
-            time.sleep(0.5)           
+            time.sleep(0.5)    
+            # 步骤7送杯子      
             RL_Move(7,position[6],robot)
             robot.MoveGripper(1, gripper_state[7]
                             , 50, 10, 10000, 1)
             time.sleep(0.5)
-                
-            
+            break
         else:
             print("等待目标位置...")
             time.sleep(0.1)
@@ -378,6 +393,11 @@ def robot_grab():
         print("抓取任务中断。")
 
     finally:
+        J1init = [30.0, -137.0, 128.0, 9.0, 30.0, 0.0]
+        p1init = robot.GetForwardKin(J1init)[1:7][0]
+        eP1=[0.000,0.000,0.000,0.000]
+        dP1=[0.000,0.000,0.000,0.000,0.000,0.000]
+        robot.MoveJ(J1init,0,0,p1init,10.0,0.0,100.0,eP1,-1.0,0,dP1)
         # 停止伺服模式
         robot.ServoMoveEnd()
         print("伺服模式已停止。")

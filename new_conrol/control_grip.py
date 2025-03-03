@@ -1,3 +1,6 @@
+"""
+用于打开夹爪
+"""
 from fairino import Robot
 import time
 robot = Robot.RPC('192.168.59.6')
